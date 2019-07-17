@@ -35,8 +35,8 @@ const App = () => (
 
   </Drawer>
       <Route exact path="/" component={Home} />
-      <Route path="#/about" component={About} />
-      <Route path="#/development" component={Development} />
+      <Route path="/about" component={About} />
+      <Route path="/development" component={Development} />
       <StickyFooter
     bottomThreshold={30}
     normalStyles={{
