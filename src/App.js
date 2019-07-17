@@ -2,7 +2,7 @@ import React from 'react';
 import Drawer from 'react-motion-drawer';
 import StickyFooter from 'react-sticky-footer';
 import './styles/App.css';
-import { HashRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter, Route, Link } from "react-router-dom";
 import { SocialIcon } from 'react-social-icons';
 
 import purpleOwl from './assets/purpleOwl.gif';
@@ -18,7 +18,7 @@ import toolbar from './props/toolbar.js';
 
 const App = () => (
 
-  <Router>
+  <HashRouter basename="/">
     <div>
       <toolbar component={toolbar}></toolbar>
     <Drawer open={false} img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Color_icon_gray.png">
@@ -27,8 +27,8 @@ const App = () => (
       <ul class="drawer">
         <p><img src={purpleOwl} width="35%" height="35%" alt="Purple Owl made in GraphicsGale"></img></p>
         <p><img src={arrow} width="10%" height="10%" alt="Arrow made in GraphicsGale"></img> <Link to="/">Home</Link> </p> 
-        <p><img src={arrow} width="10%" height="10%" alt="Arrow made in GraphicsGale"></img> <Link to="#/about">About</Link> </p> 
-        <p><img src={arrow} width="10%" height="10%" alt="Arrow made in GraphicsGale"></img> <Link to="#/development">Dev</Link> </p> 
+        <p><img src={arrow} width="10%" height="10%" alt="Arrow made in GraphicsGale"></img> <Link to="/about">About</Link> </p> 
+        <p><img src={arrow} width="10%" height="10%" alt="Arrow made in GraphicsGale"></img> <Link to="/development">Dev</Link> </p> 
         <p><img src={fawn} width="35%" height="35%" align="center" alt="Fawn made in GraphicsGale"></img></p>
       </ul>
     }
@@ -62,7 +62,7 @@ const App = () => (
 </StickyFooter>
 
     </div>
-  </Router>
+    </HashRouter>
 );
 
 export default App;
