@@ -1,8 +1,14 @@
 import React from 'react';
+import { HashRouter, Route} from "react-router-dom";
+
+import Home from './components/homeComp.js';
+import About from './components/aboutComp.js';
+import Development from './components/developmentComp.js';
 
 import '../styles/NavStyle.css';
 
 const NavBar = props => (
+	<HashRouter basename="/">
     <ul class="block-menu" background-color="#581845">
 	<li><a href="dev-portfolio/#" class="three-d">
 		Home
@@ -26,6 +32,10 @@ const NavBar = props => (
 		</span>
 	</a></li>
 </ul>
+      <Route exact path="/" component={Home} />
+      <Route path="#/about" component={About} />
+      <Route path="#/development" component={Development} />
+</HashRouter>
   );
   
   export default NavBar;
