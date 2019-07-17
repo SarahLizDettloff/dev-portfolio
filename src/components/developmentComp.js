@@ -14,6 +14,7 @@ const Development = ({ match }) => (
     <div>
         <Fade left>
                 <NavBar></NavBar>
+                These buttons are a work in progress. If you experience issues, swipe or pull the drawer on the left in the right direction. 
         </Fade>
         <Fade bottom>
         <h1>

@@ -12,6 +12,8 @@ const About = () =>
 (
   <div>
     <NavBar></NavBar>
+    These buttons are a work in progress. If you experience issues, swipe or pull the drawer on the left in the right direction. 
+
     <h2>
       <div class="flip-card">
         <div class="flip-card-inner">

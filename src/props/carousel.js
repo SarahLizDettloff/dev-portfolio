@@ -123,9 +123,9 @@ Binet's Fibonacci Number,
           </h4>
         </div>
         <div>
-          <img src={hexconvert} alt="Converts a hexdecimal into a decimal."/>
-          <p className="legend">Hexdecimal to Decimal Python cli Calculator:
-          Converts a hexdecimal into a decimal.          
+          <img src={hexconvert} alt="Converts a hexadecimal into a decimal."/>
+          <p className="legend">Hexadecimal to Decimal Python CLI Calculator:
+          Converts a hexadecimal into a decimal.          
           </p>
           <h4>
           <a href="https://github.com/SarahLizDettloff/Mathematics">Repo</a>
@@ -136,7 +136,7 @@ Binet's Fibonacci Number,
           <img src={decbin} alt="Decimal to Binary: Python CLI"/>
 
           <p className="legend">Decimal to binary calculator:
-          Python cli that converts an inputted decimal into binary.
+          Python CLI that converts an inputted decimal into binary.
           </p>
           <h4>
           <a href="https://github.com/SarahLizDettloff/Mathematics">Repo</a>
