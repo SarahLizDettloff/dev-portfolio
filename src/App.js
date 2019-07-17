@@ -2,7 +2,7 @@ import React from 'react';
 import Drawer from 'react-motion-drawer';
 import StickyFooter from 'react-sticky-footer';
 import './styles/App.css';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter  as Router, Route, Link } from "react-router-dom";
 import { SocialIcon } from 'react-social-icons';
 
 import purpleOwl from './assets/purpleOwl.gif';
