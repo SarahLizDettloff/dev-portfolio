@@ -11,14 +11,14 @@ const NavBar = props => (
 			<span class="back">Home</span>
 		</span>
 	</a></li>
-  <li><a href="/about" class="three-d">
+  <li><a href="#/about" class="three-d">
   About
 		<span aria-hidden="true" class="three-d-box">
 			<span class="front">About</span>
 			<span class="back">About</span>
 		</span>
 	</a></li>
-  <li><a href="/development" class="three-d">
+  <li><a href="#/development" class="three-d">
   Development
 		<span aria-hidden="true" class="three-d-box">
 			<span class="front">Development</span>
