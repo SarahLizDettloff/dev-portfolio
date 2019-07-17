@@ -2,7 +2,7 @@
   "name": "dev-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sarahlizdettloff.io/dev-portfolio",
+  "homepage": "https://sarahlizdettloff.github.io/dev-portfolio",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "mdbreact": "^4.17.0",
