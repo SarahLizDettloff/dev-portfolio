@@ -1,13 +1,8 @@
 import React from 'react';
-import Drawer from 'react-motion-drawer';
 import StickyFooter from 'react-sticky-footer';
 import './styles/App.css';
 import { HashRouter, Route, Link } from "react-router-dom";
 import { SocialIcon } from 'react-social-icons';
-
-import purpleOwl from './assets/purpleOwl.gif';
-import fawn from './assets/fawn.gif';
-import arrow from './assets/arrow.gif';
 
 import Home from './components/homeComp.js';
 import About from './components/aboutComp.js';
@@ -21,19 +16,29 @@ const App = () => (
   <HashRouter basename="/">
     <div>
       <toolbar component={toolbar}></toolbar>
-    <Drawer open={false} img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Color_icon_gray.png">
-    
-    { val =>
-      <ul class="drawer">
-        <p><img src={purpleOwl} width="35%" height="35%" alt="Purple Owl made in GraphicsGale"></img></p>
-        <p><img src={arrow} width="10%" height="10%" alt="Arrow made in GraphicsGale"></img> <Link to="/">Home</Link> </p> 
-        <p><img src={arrow} width="10%" height="10%" alt="Arrow made in GraphicsGale"></img> <Link to="/about">About</Link> </p> 
-        <p><img src={arrow} width="10%" height="10%" alt="Arrow made in GraphicsGale"></img> <Link to="/development">Dev</Link> </p> 
-        <p><img src={fawn} width="35%" height="35%" align="center" alt="Fawn made in GraphicsGale"></img></p>
+      <ul class="block-menu" background-color="#581845">
+      <li><Link to="/" class="three-d">
+        Home
+        <span aria-hidden="true" class="three-d-box">
+          <span class="front">Home</span>
+          <span class="back">Home</span>
+        </span>
+      </Link></li>
+      <li><Link to="/about" class="three-d">
+      About
+        <span aria-hidden="true" class="three-d-box">
+          <span class="front">About</span>
+          <span class="back">About</span>
+        </span>
+      </Link></li>
+      <li><Link to="/development" class="three-d">
+      Development
+        <span aria-hidden="true" class="three-d-box">
+          <span class="front">Development</span>
+          <span class="back">Development</span>
+        </span>
+      </Link></li>
       </ul>
-    }
-
-  </Drawer>
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/development" component={Development} />

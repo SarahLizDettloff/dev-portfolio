@@ -1,7 +1,5 @@
 import React from 'react';
 
-import NavBar from '../props/navbar.js';
-
 import '../styles/AboutStyle.css';
 
 import me from '../assets/me.png';
@@ -11,8 +9,6 @@ import face from '../assets/my_face.png';
 const About = () => 
 (
   <div>
-    <NavBar></NavBar>
-    These buttons are a work in progress. If you experience issues, swipe or pull the drawer on the left in the right direction. 
 
     <h2>
       <div class="flip-card">
