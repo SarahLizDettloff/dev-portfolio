@@ -47,8 +47,7 @@ const App = () => (
     normalStyles={{
     backgroundColor: "#B9BABB",
     height: 5,
-    float: "bottom",
-    position:"center",
+    float: "center",
     bottom:0,
     width:"100%",
     }}
@@ -56,7 +55,6 @@ const App = () => (
     backgroundColor:  "#B9BABB",
     float: "bottom",
     height: 5,
-    position:"center",
     bottom:0,
     width:"100%",
     }}

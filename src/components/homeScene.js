@@ -2,17 +2,19 @@ import React, { Component } from "react";
 import * as THREE from "three";
 
 import '../styles/Canvas.css';
+import sky from '../assets/skybox/waterfall.jpg';
+
 
 const OrbitControls = require("three-orbit-controls")(THREE);
-
-    class Shape extends Component {
-  constructor(props) {
-    super(props);
-    this.animate = this.animate.bind(this);
-    this.addCube = this.addCube.bind(this);
-    this.addLight = this.addLight.bind(this);
-    this.initializeCamera = this.initializeCamera.bind(this);
-    this.initializeOrbits = this.initializeOrbits.bind(this);
+  class Shape extends Component {
+    constructor(props) {
+      super(props);
+      this.animate = this.animate.bind(this);
+      this.addCube = this.addCube.bind(this);
+      this.addLight = this.addLight.bind(this);
+      this.skyBox = this.skyBox.bind(this);
+      this.initializeCamera = this.initializeCamera.bind(this);
+      this.initializeOrbits = this.initializeOrbits.bind(this);
   }
 componentDidMount() {
     const width = this.mount.clientWidth;
@@ -21,6 +23,7 @@ componentDidMount() {
     this.camera = new THREE.PerspectiveCamera(100, width / height, 0.15, 500);
     this.camera.position.set( 0, 1.5, 3 );
     this.scene.add( new THREE.AmbientLight( 0x505050 ) );
+
     var spotLight = new THREE.SpotLight( 0xffffff );
     spotLight.angle = Math.PI / 5;
     spotLight.penumbra = 0.2;
@@ -31,6 +34,7 @@ componentDidMount() {
     spotLight.shadow.mapSize.width = 1024;
     spotLight.shadow.mapSize.height = 1024;
     this.scene.add( spotLight );
+
     var dirLight = new THREE.DirectionalLight( 0x55505a, 1 );
     dirLight.position.set( 0, 2, 0 );
     dirLight.castShadow = true;
@@ -43,11 +47,13 @@ componentDidMount() {
     dirLight.shadow.mapSize.width = 1024;
     dirLight.shadow.mapSize.height = 1024;
     this.scene.add( dirLight );
+
     var planeGeo = new THREE.PlaneGeometry(500, 1, 500 );
-    var planeMaterial = new THREE.MeshBasicMaterial( {color: "#68BBD1", side: THREE.DoubleSide} );
-    var plane = new THREE.Mesh( planeGeo, planeMaterial );
-    plane.position.set( 0, -5, 0 );
-    this.scene.add( plane );
+    var planeMaterial = new THREE.MeshBasicMaterial({color: "#68BBD1", side: THREE.DoubleSide});
+    var plane = new THREE.Mesh( planeGeo, planeMaterial);
+    plane.position.set(0, -5, 0);
+    this.scene.add(plane);
+
     this.renderer = new THREE.WebGLRenderer({ antialias: true });
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     this.renderer.setSize(width, height);
@@ -55,11 +61,14 @@ componentDidMount() {
     this.initializeOrbits();
     this.initializeCamera();
 
+    this.skyBox();
+
     var ambientLight = new THREE.AmbientLight( 0xcccccc, 0.4 );
     this.scene.add(ambientLight);
+
     var light = new THREE.DirectionalLight( 0xffffff, 0.35 );
-	light.position.set( 1, 1, 1 ).normalize();
-	this.scene.add(light);
+	  light.position.set( 1, 1, 1 ).normalize();
+	  this.scene.add(light);
 
     
     const geometry = new THREE.BoxGeometry( 1, 1, 1 );
@@ -81,9 +90,7 @@ componentDidMount() {
     this.cube5.position.set(8, -1, -8);
 
     this.object = new THREE.Mesh( new THREE.TetrahedronBufferGeometry( 75, 0 ), material );
-	this.object.position.set( 0, 0, 0 );
-    
-
+	  this.object.position.set( 0, 0, 0 );
     this.scene.add(this.cube, this.cube2, this.cube3, this.cube4, this.cube5, this.object);
 
     this.light = new THREE.PointLight( 0xFFFF00 );
@@ -95,15 +102,40 @@ componentDidMount() {
 
     this.animate();
   }
+
+skyBox() {
+    const loader = new THREE.TextureLoader();
+    const texture = loader.load(
+      sky,
+    );
+    texture.magFilter = THREE.LinearFilter;
+    texture.minFilter = THREE.LinearFilter;
+
+    const shader = THREE.ShaderLib.equirect;
+		const material = new THREE.ShaderMaterial({
+      fragmentShader: shader.fragmentShader,
+      vertexShader: shader.vertexShader,
+      uniforms: shader.uniforms,
+      depthWrite: false,
+      side: THREE.BackSide,
+    });
+		material.uniforms.tEquirect.value = texture;
+    const plane = new THREE.BoxBufferGeometry(15, 15, 15);
+    this.bgMesh = new THREE.Mesh(plane, material);
+    this.scene.add(this.bgMesh);
+  }
+
 componentWillUnmount() {
     cancelAnimationFrame(this.frameId);
     this.mount.removeChild(this.renderer.domElement);
   }
+  
 initializeOrbits() {
     this.controls.rotateSpeed = 1.0;
     this.controls.zoomSpeed = 1.2;
     this.controls.panSpeed = 0.8;
   }
+
 initializeCamera() {
     this.camera.position.x = 0;
     this.camera.position.y = 0;
@@ -129,9 +161,11 @@ animate() {
     this.frameId = window.requestAnimationFrame(this.animate);
     this.renderer.render(this.scene, this.camera);
   }
+
 addCube(cube) {
     this.scene.add(cube);
   }
+
 addLight(light) {
     this.scene.add(light);
   }
