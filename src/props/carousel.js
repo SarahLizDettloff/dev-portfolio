@@ -15,6 +15,7 @@ import sinewave from '../assets/sinewave.png';
 import linegraph from '../assets/linegraph.png';
 import hexconvert from '../assets/hexconvert.png';
 import decbin from '../assets/decimal2Binary.png';
+import plate from '../assets/plate.gif';
 
 class CustCarousel extends Component {
   render() {
@@ -27,6 +28,15 @@ class CustCarousel extends Component {
           <h4>
           <a href="https://github.com/SarahLizDettloff/IWouldPutSomeCheeseOnThat">Repo</a>
           <a href="https://github.com/SarahLizDettloff/IWouldPutSomeCheeseOnThat/raw/master/IWouldPutSomeCheeseOnThat.apk">Download</a>
+          </h4>
+        </div>
+        <div>
+          <img src={plate} alt="Plate Break"/>
+          <p className="legend">Plate Break: 
+          Built with Unity, Simply shake your phone to drop the plate or use your finger to throw the plate across the screen.</p>
+          <h4>
+          <a href="https://github.com/SarahLizDettloff/PlateBreak">Repo</a>
+          <a href="https://github.com/SarahLizDettloff/PlateBreak/raw/master/PlateBreak.aab">Download</a>
           </h4>
         </div>
         <div>
@@ -52,7 +62,7 @@ class CustCarousel extends Component {
         <div>
           <img src={quantum} alt="Output from Quantum Simulator"/>
           <p className="legend">Quantum Algorithms: 
-          The quantum simulator supplied by Microsoft's Quantum Development Kit allows demonstrations of quantum algorithms. This project contains an exhitbit of entangement. During each run of this program it informs the user of the estimatd resources needed to run it on a quantum computer. Concepts covered are: Pauli-Z Gate, and Bell States.
+          The quantum simulator supplied by Microsoft's Quantum Development Kit allows demonstrations of quantum algorithms. This project contains an exhibit of entanglement. During each run of this program it informs the user of the estimated resources needed to run it on a quantum computer. Concepts covered are: Pauli-Z Gate, and Bell States.
           </p>
             <h4>
           <a href="https://github.com/SarahLizDettloff/QuantumAlgorithms">Repo</a>

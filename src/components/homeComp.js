@@ -20,13 +20,13 @@ const Home = () => (
     <Fade top>
     </Fade>
     <Fade top>
-    <h6>Checkout the interactive waterfall below. 
+    <h6>Checkout the interactive waterfall below. </h6>
+    <h6>
     <br></br>
         Skybox image is kudos of<a href="https://hdrihaven.com/">HDRI Haven</a></h6>
     <h5>
-    <img src={owl} alt="owl" height="5%" width="5%"></img>Sarah Dettloff<img src={fawn} alt="owl" height="5%" width="5%"></img>
+    <img src={owl} alt="owl" height="8%" width="8%" padding="10px"></img>Sarah Dettloff<img src={fawn} alt="owl" height="8%" width="8%" padding="10px"></img>
     </h5>
-  
       </Fade>
       <Fade bottom>
       <Shape></Shape>

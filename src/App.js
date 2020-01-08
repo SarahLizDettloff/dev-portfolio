@@ -45,14 +45,14 @@ const App = () => (
       <StickyFooter
     bottomThreshold={30}
     normalStyles={{
-    backgroundColor: "#B9BABB",
+    backgroundColor: "##77e2f7",
     height: 5,
     float: "center",
     bottom:0,
     width:"100%",
     }}
     stickyStyles={{
-    backgroundColor:  "#B9BABB",
+    backgroundColor:  "##77e2f7",
     float: "bottom",
     height: 5,
     bottom:0,
@@ -63,7 +63,6 @@ const App = () => (
 <SocialIcon url="mailto: sarah.liz.dettloff@gmail.com" class="footer"/>
 <SocialIcon url="https://www.linkedin.com/in/sarah-dettloff-86a029103/" class="footer"/>
 </StickyFooter>
-
     </div>
     </HashRouter>
 );

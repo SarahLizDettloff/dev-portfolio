@@ -4,4 +4,4 @@ import { bounce } from 'react-animations';
 
 
 const Bounce = styled.div`animation: 15s ${keyframes`${bounce}`} infinite`;
-export default class WelcomeAnimations extends Component { render() { return ( <Bounce>Thank you for stopping by.</Bounce>);}}
+export default class WelcomeAnimations extends Component { render() { return ( <Bounce>Welcome</Bounce>);}}

@@ -1,14 +1,17 @@
 .App {
   text-align: center;
-  background-color: #B9BABB;
+  background-color: white;
   scroll-behavior: smooth;
   overflow: scroll;
   padding: 10px;
 
 }
-
+ul {
+  background: rgb(2,0,36);
+  background: linear-gradient(120deg, rgba(2,0,36,1) 0%, rgba(88,24,69,1) 100%);
+}
 body {
-  background-color: #B9BABB;
+  background-color: white;
   color: black;
 }
 
@@ -64,6 +67,7 @@ h3
   text-overflow: ellipsis;
   position:absolute;
 }
+
 h6
 {
   padding: 20px;
@@ -71,6 +75,14 @@ h6
   margin-right: 20%;
   font-size: 20px;
   width: 45%;
+}
+::selection {
+  background-color: #1bd14c;
+  color: #222222;
+}
+::-moz-selection {
+  background-color: #1bd14c;
+  color: #222222;
 }
 
 
@@ -134,7 +146,6 @@ justify-content: center;
 	display: block;
 	text-decoration: none;
 	font-family: 'Passion One', Arial, sans-serif;
-	font-smoothing: antialiased;
 	text-transform: uppercase;
 	overflow: visible;
 	line-height: 20px;
@@ -150,7 +161,8 @@ justify-content: center;
 }
 	.three-d:hover .three-d-box, 
 	.three-d:focus .three-d-box {
-		transform: translateZ(-25px) rotateX(90deg);
+    transform: translateZ(-25px) rotateX(90deg);
+    transition: 0.3s ease all;
 	}
 
 .three-d-box {

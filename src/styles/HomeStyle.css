@@ -1,6 +1,6 @@
 .App {
 text-align: center;
-background-color: #B9BABB;
+background-color: #581845;
 scroll-behavior: smooth;
 overflow: scroll;
 padding: 10px;
@@ -8,12 +8,12 @@ padding: 10px;
 }
 
 body {
-background-color: #B9BABB;
-color: black;
+background-color: #581845;
+color: #b8bfc1;
 }
 
 p {
-color: black;
+color: #b8bfc1;
 white-space: initial; 
 overflow: show;
 text-overflow: ellipsis;
@@ -24,12 +24,12 @@ position: center;
 }
 
 li {
-color: black;
+color: #b8bfc1;
 }
 nav li {
 align-items: center;
 float: middle;
-color: black;
+color: #b8bfc1;
 }
 header {
 padding: 30px;
@@ -41,7 +41,7 @@ float: top
 }
 
 h2 {
-color: black;
+color: #b8bfc1;
 display: center;
 flex-direction: column;
 align-items: center;
@@ -87,18 +87,18 @@ h6
   margin-right: 25%;
 }
 h4 {
-color: #112526;
+color: #dff5f0;
 text-align: center;
 padding: 2px;
 margin: 5%;
 top: 0;
 position:absolute;
 size: 10;
-text-shadow: 0 1px #656869, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+text-shadow: 0 1px #656869, -1px 0 #0239c9, -1px 2px #808d93, -2px 1px #0239c9, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
 }
 
 a {
-color: black;
+color: #b8bfc1;
 text-shadow: 0 -1px 4px #89FAF4, 0 -2px 10px #0046FF, 0 -10px 20px #00C1FF, 0 -18px 40px #4C00F0;
 padding: 15px;
 margin: 10px;
