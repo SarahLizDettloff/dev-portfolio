@@ -1,22 +1,18 @@
 .App {
   text-align: center;
-  background-color: white;
+  background-color: #003632;
   scroll-behavior: smooth;
   overflow: scroll;
-  padding: 10px;
+  padding: 20;
+}
+h1 {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
 
-}
-ul {
-  background: rgb(2,0,36);
-  background: linear-gradient(120deg, rgba(2,0,36,1) 0%, rgba(88,24,69,1) 100%);
-}
-body {
-  background-color: white;
-  color: black;
-}
 
 p {
-  color: black;
   white-space: initial; 
   overflow: show;
   text-overflow: ellipsis;
@@ -26,23 +22,6 @@ p {
   position: center;
 }
 
-li {
-  color: black;
-}
-nav li {
-  align-items: center;
-  float: middle;
-  color: black;
-  
-}
-header {
-  padding: 30px;
-  margin: 5%;
-}
-h1 {
-  position: center;
-  float: top
-}
 h5
 {
   display: center;
@@ -50,22 +29,24 @@ h5
   align-items: center;
   justify-content: center;
   text-align: center;
-  top: 0;
   padding: 30px;
   margin-left: 25%;
   margin-right: 25%;
   font-size: 36px;
+  font-family: Georgia, serif;
 }
 h3
 {
   top: 10px;
-  font-size: 20px;
+  font-size: 20px;  
+  font-family: Georgia, serif;
   align-items: right;
   justify-content: right;
   text-align: right;
   overflow: show;
   text-overflow: ellipsis;
   position:absolute;
+  background-color: #003632;
 }
 
 h6
@@ -74,95 +55,67 @@ h6
   margin-left: 20%;
   margin-right: 20%;
   font-size: 20px;
+  font-family: Georgia, serif;
   width: 45%;
 }
 ::selection {
-  background-color: #1bd14c;
-  color: #222222;
+  background-color: #75807f;
+  color: #D14990;
 }
 ::-moz-selection {
-  background-color: #1bd14c;
-  color: #222222;
-}
-
-
-h4 {
-  color: #112526;
-  text-align: right;
-  overflow: show;
-  text-overflow: ellipsis;
-  padding: 10px;
-  margin: 5%;
-  position:absolute;
-  bottom: 0;
-  right: 0;
-  size: 10;
-  text-shadow: 0 1px #656869, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
-
+  background-color: #85EFF5;
+  color: #D14990;
 }
 
 a {
   color: black;
-  text-shadow: 0 -1px 4px #89FAF4, 0 -2px 10px #0046FF, 0 -10px 20px #00C1FF, 0 -18px 40px #4C00F0;
-  padding: 15px;
+  padding: 20;
   margin: 10px;
-}
-.footer {
-  white-space: initial; 
-  overflow: show;
-  text-overflow: ellipsis;
-  margin: 10px;
-  padding: 30px;
-  display: center;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-  text-align: center;
-  position: center;
 }
 
 .App-link {
   color: black;
 }
 .block-menu {
-	display: block;
-	left: 0;
-  text-align: left;
-  overflow: show;
-  text-overflow: ellipsis;
-  padding: 10px;
-  position:absolute;
-  top: 0;
-  left: 0;
-  size: 10;
+  overflow: hidden;
+  position: fixed;
+  right:0;
+  bottom: 0;
+  top: 10px;
+  padding: 5px;
+  height: 100%;
+  z-index: 99;
 }
 
-.block-menu li {
-	display: inline-block;
-}
 
 .block-menu li a {
 	color: #fff;
 	display: block;
 	text-decoration: none;
-	font-family: 'Passion One', Arial, sans-serif;
+	font-family: Georgia, serif;
 	text-transform: uppercase;
 	overflow: visible;
 	line-height: 20px;
 	font-size: 24px;
-	padding: 15px 10px;
+  padding: 15px 10px;
+  z-index: 99;
+  bottom: 0;
 }
 
 .three-d {
-	perspective: 200px;
+  perspective: 200px;
+  z-index: 99;
 	transition: all .07s linear;
 	position: relative;
-	cursor: pointer;
+  cursor: pointer;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 	.three-d:hover .three-d-box, 
 	.three-d:focus .three-d-box {
     transform: translateZ(-25px) rotateX(90deg);
     transition: 0.3s ease all;
+    z-index: 99;
 	}
 
 .three-d-box {
@@ -171,20 +124,23 @@ justify-content: center;
 	transform-style: preserve-3d;
 	pointer-events: none;
 	position: absolute;
-	top: 0;
+	bottom: 0;
 	left: 0;
-	display: block;
+  display: block;
+  z-index: 99;
 	width: 100%;
 	height: 100%;
 }
 
 .front {
-	transform: rotatex(0deg) translatez(25px);
+  transform: rotatex(0deg) translatez(25px);
+  z-index: 99;
 }
 
 .back {
 	transform: rotatex(-90deg) translatez(25px);
-	color: #ffe7c4;
+  color: #003632;
+  z-index: 99;
 }
 
 .front, .back {
@@ -192,13 +148,23 @@ justify-content: center;
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	top: 0;
+	top: 5px;
 	left: 0;
-	background: #581845;
+	background: #6B447C;
 	padding: 15px 10px;
-	color: white;
+	color: #003632;
 	pointer-events: none;
-	box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 99;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  height: 15%;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 @keyframes App-logo-spin {

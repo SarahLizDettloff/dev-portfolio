@@ -1,27 +1,18 @@
 .App {
 text-align: center;
-background-color: #581845;
+background-color: #004934;
 scroll-behavior: smooth;
 overflow: scroll;
 padding: 10px;
 
 }
-
-body {
-background-color: #581845;
-color: #b8bfc1;
+.complete {
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  width: 100%; height: 100%;
 }
 
-p {
-color: #b8bfc1;
-white-space: initial; 
-overflow: show;
-text-overflow: ellipsis;
-margin: 10px;
-padding: px;
-text-align: center;
-position: center;
-}
 
 li {
 color: #b8bfc1;
@@ -31,15 +22,13 @@ align-items: center;
 float: middle;
 color: #b8bfc1;
 }
-header {
-padding: 30px;
-margin: 5%;
-}
-h1 {
-position: center;
-float: top
-}
 
+h1 {
+  top: 0;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
 h2 {
 color: #b8bfc1;
 display: center;
@@ -52,27 +41,39 @@ margin-bottom: 4%;
 }
 h5
 {
-display: center;
+  font-family: Georgia, serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+font-size: 32px;
+letter-spacing: 5px;
+word-spacing: 5px;
+color: #6FC92A;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+display: left;
 flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
-top: 0;
+align-items: left;
+justify-content: left;
+text-align: left;
 padding: 1px;
-margin-left: 25%;
-margin-right: 25%;
+margin-left: 0%;
 font-size: 12px;
-}
-h3
-{
-top: 10px;
-font-size: 20px;
-align-items: right;
-justify-content: right;
-text-align: right;
-overflow: show;
-text-overflow: ellipsis;
-position:absolute;
+z-index: 99;
+text-shadow: 0 1px 0 #003632, 
+               0 2px 0 #003635,
+               0 3px 0 #003639,
+               0 4px 0 #003645,
+               0 5px 0 #003650,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 }
 h6
 {
@@ -87,53 +88,33 @@ h6
   margin-right: 25%;
 }
 h4 {
-color: #dff5f0;
-text-align: center;
-padding: 2px;
-margin: 5%;
-top: 0;
-position:absolute;
+color: black;
+width: 644px;
+height: 10;
+font-family: Georgia, serif;
+font-size: 25px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #003632;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
 size: 10;
-text-shadow: 0 1px #656869, -1px 0 #0239c9, -1px 2px #808d93, -2px 1px #0239c9, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+z-index: 99;
+margin-left:auto;margin-right:auto;
 }
-
+.Top {
+  top: 0;
+}
 a {
 color: #b8bfc1;
-text-shadow: 0 -1px 4px #89FAF4, 0 -2px 10px #0046FF, 0 -10px 20px #00C1FF, 0 -18px 40px #4C00F0;
 padding: 15px;
 margin: 10px;
 }
-.footer {
-white-space: initial; 
-overflow: show;
-text-overflow: ellipsis;
-margin: 10px;
-padding: 30px;
-text-align: center;
-position: center;
-}
-.drawer {
-opacity: 850;
-background-color: black;
-text-shadow: 0 -1px 4px #89FAF4, 0 -2px 10px #0046FF, 0 -10px 20px #00C1FF, 0 -18px 40px #4C00F0;
-font-size: 9px;
-text-align: left;
-white-space: initial; 
-text-overflow: ellipsis;
-}
 
-.drawer a {
-padding: 6px 8px 6px 16px;
-text-decoration: none;
-font-size: 16px;
-text-align: right;
-color: #B9BABB;
-}
 
-.drawer a:hover {
-color: black;
-transform: scale(1.8);
-}
 .App-link {
 color: black;
 }
