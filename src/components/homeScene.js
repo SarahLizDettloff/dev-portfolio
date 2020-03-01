@@ -16,6 +16,7 @@ const OrbitControls = require("three-orbit-controls")(THREE);
       this.skyBox = this.skyBox.bind(this);
       this.initializeCamera = this.initializeCamera.bind(this);
       this.initializeOrbits = this.initializeOrbits.bind(this);
+    
   }
 componentDidMount() {
     const width = this.mount.clientWidth;
@@ -67,7 +68,7 @@ componentDidMount() {
 	  this.scene.add(light);
 
     
-    const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+    const geometry = new THREE.BoxBufferGeometry( 1, 1, 1 );
     const material = new THREE.MeshPhongMaterial ( { color: "#3B9BB5", shininess: 150, clearCoat:0.45}  );
     this.cube = new THREE.Mesh( geometry, material );
 

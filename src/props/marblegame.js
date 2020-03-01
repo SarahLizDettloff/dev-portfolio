@@ -6,7 +6,7 @@ class MarbleGame extends Component {
     render() {
         return (
             <div>
-            <img src={marble} alt="Marble Single Level"/>
+            <img src={marble} alt="Marble Single Level" width="30%" height="30%"/>
             <p className="title">Marble Single Level</p>
             <p className="legend"> 
             Built with Unity3D 5.6.3p1, this simple marble rolling game has the objective of collecting all 42 cubes.           </p>

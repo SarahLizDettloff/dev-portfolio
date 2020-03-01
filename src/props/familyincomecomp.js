@@ -6,7 +6,7 @@ class FamilyIncomeComp extends Component {
     render() {
         return (
             <div>
-          <img src={linegraph} alt="Data comparison with a line graph output"/>
+          <img src={linegraph} alt="Data comparison with a line graph output" height="70%" width="70%"/>
           <p className="title">Graphing Data in Python</p>
           <p className="legend">
           This jupyer lab notebook compares two sets of family incomes from seperate years and compares them visually on a line graph. The data is obtained from the US Data Gov. Written in Python using NumPy and MatPlotLib.          </p>

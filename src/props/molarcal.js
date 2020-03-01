@@ -6,7 +6,7 @@ class MolarCalculator extends Component {
     render() {
         return (
             <div>
-            <img src={molar} alt="Mass for Molar Solution"/>
+            <img src={molar} alt="Mass for Molar Solution"  width="30%" height="30%"/>
             <p className="title">Mass for Molar Solution</p>
             <p className="legend">
             This VIsual Basic .NET calculator allows you to discover the mass molarity of a compound which requires a concentration and volume. Scientists practice this equation in order to make solutions.            </p>

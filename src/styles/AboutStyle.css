@@ -143,8 +143,8 @@ padding: 15px;
 
 .flip-card-inner {
 position: relative;
-width: 70%;
-height: 70%;
+width: 50%;
+height: 50%;
 text-align: center;
 transition: transform 0.8s;
 transform-style: preserve-3d;
@@ -156,8 +156,8 @@ transform: rotateY(180deg);
 
 .flip-card-front, .flip-card-back {
 position: absolute;
-width: 70%;
-height: 70%;
+width: 50%;
+height: 50%;
 backface-visibility: hidden;
 }
 
@@ -173,8 +173,8 @@ font-size: 100;
 letter-spacing: 8px;
 background-color: #003632;
 color: #003632; 
-width: 60%;
-margin-left: 25%;
+width: 50%;
+margin-left: 35%;
 margin-bottom: 5%;
 padding: 20px;
 line-height: 2;
