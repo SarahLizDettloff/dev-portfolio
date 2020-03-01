@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/dev-portfolio/static/css/main.955bb825.chunk.css",
-    "main.js": "/dev-portfolio/static/js/main.108e2c5d.chunk.js",
-    "main.js.map": "/dev-portfolio/static/js/main.108e2c5d.chunk.js.map",
-    "runtime~main.js": "/dev-portfolio/static/js/runtime~main.e91790c5.js",
-    "runtime~main.js.map": "/dev-portfolio/static/js/runtime~main.e91790c5.js.map",
-    "static/js/2.894bd814.chunk.js": "/dev-portfolio/static/js/2.894bd814.chunk.js",
-    "static/js/2.894bd814.chunk.js.map": "/dev-portfolio/static/js/2.894bd814.chunk.js.map",
+    "main.css": "/dev-portfolio/static/css/main.042c404a.chunk.css",
+    "main.js": "/dev-portfolio/static/js/main.c57c7eb8.chunk.js",
+    "main.js.map": "/dev-portfolio/static/js/main.c57c7eb8.chunk.js.map",
+    "runtime-main.js": "/dev-portfolio/static/js/runtime-main.382e62d2.js",
+    "runtime-main.js.map": "/dev-portfolio/static/js/runtime-main.382e62d2.js.map",
+    "static/js/2.456aaac2.chunk.js": "/dev-portfolio/static/js/2.456aaac2.chunk.js",
+    "static/js/2.456aaac2.chunk.js.map": "/dev-portfolio/static/js/2.456aaac2.chunk.js.map",
     "index.html": "/dev-portfolio/index.html",
-    "precache-manifest.63a586279ff90c94abcddc876fd80726.js": "/dev-portfolio/precache-manifest.63a586279ff90c94abcddc876fd80726.js",
+    "precache-manifest.74a51c41518fd4b96710935f206e00cc.js": "/dev-portfolio/precache-manifest.74a51c41518fd4b96710935f206e00cc.js",
     "service-worker.js": "/dev-portfolio/service-worker.js",
-    "static/css/main.955bb825.chunk.css.map": "/dev-portfolio/static/css/main.955bb825.chunk.css.map",
-    "static/media/DevStyle.css": "/dev-portfolio/static/media/9.05257f5a.jpg",
+    "static/css/main.042c404a.chunk.css.map": "/dev-portfolio/static/css/main.042c404a.chunk.css.map",
+    "static/js/2.456aaac2.chunk.js.LICENSE.txt": "/dev-portfolio/static/js/2.456aaac2.chunk.js.LICENSE.txt",
     "static/media/basiccalculator.png": "/dev-portfolio/static/media/basiccalculator.72dab0d9.png",
     "static/media/cheeseOnThatScreenshot.png": "/dev-portfolio/static/media/cheeseOnThatScreenshot.76db0751.png",
     "static/media/linegraph.png": "/dev-portfolio/static/media/linegraph.0254b13d.png",
@@ -25,5 +25,11 @@
     "static/media/plate.gif": "/dev-portfolio/static/media/plate.782a6950.gif",
     "static/media/sinewave.png": "/dev-portfolio/static/media/sinewave.252bae0d.png",
     "static/media/stock.png": "/dev-portfolio/static/media/stock.eb2a20cf.png"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.382e62d2.js",
+    "static/js/2.456aaac2.chunk.js",
+    "static/css/main.042c404a.chunk.css",
+    "static/js/main.c57c7eb8.chunk.js"
+  ]
 }
