@@ -33,7 +33,7 @@ img:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .title {
-  font-size: 16px;
+  font-size: 20px;
   font-family: Georgia, serif;
   letter-spacing: 2px;
   text-align: center;
@@ -45,7 +45,7 @@ img:hover {
   width: 50%;
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  font-size: 1rem;
+  font-size: 3rem;
   text-transform: capitalize;
   z-index: 2;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -68,83 +68,83 @@ img:hover {
 }
 
 .plate {
-  background-color: #00B6D6;
+  background-image: url('../assets/bgNature/1.jpg');
   background-size: cover;
   width: 100%;
 }
 
 .marble {
-  background-color: #D14990;
+  background-image: url('../assets/bgNature/3.jpg');
   background-size: cover;
   width: 100%;
 }
 
 .basicCal {
-  background-color: #7B41F5;
+  background-image: url('../assets/bgNature/2.jpg');
   background-size: cover;
   width: 100%;
 }
 
 .familyincome {
-  background-color: #4301D6;
+  background-image: url('../assets/bgNature/4.jpg');
   background-size: cover;
   width: 100%;
 }
 
 .hexco {
-  background-color: #000B3B;
+  background-image: url('../assets/bgNature/5.jpg');
   background-size: cover;
   width: 100%;
 }
 
 .cheese {
-  background-color: #00C098;
+  background-image: url('../assets/bgNature/6.jpg');
   background-size: cover;
   width: 100%;
 }
 
 .lyricAnalysis {
-  background-color: #00910D;
+  background-image: url('../assets/bgNature/7.jpg');
   background-size: cover;
   width: 100%;
 }
 
 .quantumsim {
-  background-color: #00EF38;
+  background-image: url('../assets/bgNature/8.jpg');
   background-size: cover;
   width: 100%;
 }
 
 .physicsApp {
-  background-color: #35F6A3;
+  background-image: url('../assets/bgNature/9.jpg');
   background-size: cover;
   width: 100%;
 }
 
 .stockdiv {
-  background-color: #00B6D6;
+  background-image: url('../assets/bgNature/10.jpg');
   background-size: cover;
   width: 100%;
 }
 
 .molarCal {
-  background-color: #D14990;
+  background-image: url('../assets/bgNature/11.jpg');
   background-size: cover;
   width: 100%;
 }
 
 .sine {
-  background-color: #7B41F5;
+  background-image: url('../assets/bgNature/12.jpg');
   background-size: cover;
   width: 100%;
 }
 .dec2bin {
-  background-color: #4301D6;
+  background-image: url('../assets/bgNature/13.jpg');
   background-size: cover;
   width: 100%;
 }
 .legend {
-  font-size: 12px;
+  font-size: 20px;
   font-family: Georgia, serif;
   letter-spacing: 2px;
   text-align: center;
@@ -156,6 +156,7 @@ img:hover {
   width: 50%;
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  font-weight: bold;
   z-index: 2;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }

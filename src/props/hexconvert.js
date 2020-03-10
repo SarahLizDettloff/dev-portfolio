@@ -6,7 +6,7 @@ class HexConvert extends Component {
     render() {
         return (
             <div>
-            <img src={hexconvert} alt="Converts a hexadecimal into a decimal."  width="30%" height="30%"/>
+            <img src={hexconvert} alt="Converts a hexadecimal into a decimal." height="75%" width="75%"/>
             <p className="title">Hexadecimal to Decimal Calculator</p>
             <p className="legend">
             This python script takes an inputted hexadecimal and converts it to a decimal without using any common Python libaries.      

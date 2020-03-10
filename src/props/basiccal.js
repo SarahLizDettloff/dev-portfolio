@@ -6,7 +6,7 @@ class BasicCalculator extends Component {
     render() {
         return (
             <div>
-            <img src={basicCal} alt="Basic Calculator" width="15%" height="15%"/>
+            <img src={basicCal} alt="Basic Calculator"/>
             <p className="title">Calculator</p>
             <p className="legend">            
             Retro calculator written in Visual Basic .NET with images created in Graphics Gale. Compatible with Windows.
