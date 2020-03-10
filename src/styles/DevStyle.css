@@ -1,73 +1,165 @@
 
-p {
-  color: black;
-  white-space: initial; 
-  overflow: show;
-  text-overflow: ellipsis;
-  margin: 10px;
-  padding: 30px;
-  text-align: center;
-  position: center;
-}
-
-li {
-  color: black;
-}
 nav li {
   align-items: center;
   float: middle;
-  color: black;
-  
-}
-header {
-  background-color: #B9BABB;
 }
 h1 {
-  position: center;
-  margin-top: 10%;
-  height: 700px;
-}
-h1 img {
-  width: 100%;
-  height: 1%;
+  height: 100vh;
+  
 }
 
-
+h4 {
+  width: 300px;
+}
 .footer {
-  white-space: initial; 
-  overflow: show;
-  text-overflow: ellipsis;
-  margin: 10px;
+  clear: both;
+  position: relative;
+}
+h4 a {
+  font-size: 20px;
+  font-family: Georgia, serif;
+  letter-spacing: 2px;
+  color: #85EFF5;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 30px;
+
+}
+img:hover {
+  opacity: 0.2;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.title {
+  font-size: 20px;
+  font-family: Georgia, serif;
+  letter-spacing: 2px;
   text-align: center;
-  position: center;
-}
-.drawer {
-  opacity: 850;
-  background-color: black;
-  text-shadow: 0 -1px 4px #89FAF4, 0 -2px 10px #0046FF, 0 -10px 20px #00C1FF, 0 -18px 40px #4C00F0;
-  font-size: 9px;
-  text-align: left;
-  white-space: initial; 
-  text-overflow: ellipsis;
-
-}
-
-/* The navigation menu links */
-.drawer a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 16px;
-  text-align: right;
-  color: #B9BABB;
+  color: #6FC92A;
+  scroll-behavior: smooth;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  font-size: 3rem;
+  text-transform: capitalize;
+  z-index: 2;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-/* When you mouse over the navigation links, change their color */
-.drawer a:hover {
-  color: black;
-  transform: scale(1.8);
+.title:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.legend:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.references {
+  position: absolute;
+  top: 8px;
+  font-size: 1rem;
+  text-transform: capitalize;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.plate {
+  background-image: url('../assets/bgNature/1.jpg');
+  background-size: cover;
+  width: 100%;
+}
+
+.marble {
+  background-image: url('../assets/bgNature/3.jpg');
+  background-size: cover;
+  width: 100%;
+}
+
+.basicCal {
+  background-image: url('../assets/bgNature/2.jpg');
+  background-size: cover;
+  width: 100%;
+}
+
+.familyincome {
+  background-image: url('../assets/bgNature/4.jpg');
+  background-size: cover;
+  width: 100%;
+}
+
+.hexco {
+  background-image: url('../assets/bgNature/5.jpg');
+  background-size: cover;
+  width: 100%;
+}
+
+.cheese {
+  background-image: url('../assets/bgNature/6.jpg');
+  background-size: cover;
+  width: 100%;
+}
+
+.lyricAnalysis {
+  background-image: url('../assets/bgNature/7.jpg');
+  background-size: cover;
+  width: 100%;
+}
+
+.quantumsim {
+  background-image: url('../assets/bgNature/8.jpg');
+  background-size: cover;
+  width: 100%;
+}
+
+.physicsApp {
+  background-image: url('../assets/bgNature/9.jpg');
+  background-size: cover;
+  width: 100%;
+}
+
+.stockdiv {
+  background-image: url('../assets/bgNature/10.jpg');
+  background-size: cover;
+  width: 100%;
+}
+
+.molarCal {
+  background-image: url('../assets/bgNature/11.jpg');
+  background-size: cover;
+  width: 100%;
+}
+
+.sine {
+  background-image: url('../assets/bgNature/12.jpg');
+  background-size: cover;
+  width: 100%;
+}
+.dec2bin {
+  background-image: url('../assets/bgNature/13.jpg');
+  background-size: cover;
+  width: 100%;
+}
+.legend {
+  font-size: 20px;
+  font-family: Georgia, serif;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #6FC92A;
+  scroll-behavior: smooth;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  font-weight: bold;
+  z-index: 2;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
 .App-link {
   color: black;
@@ -81,3 +173,5 @@ h1 img {
     transform: rotate(360deg);
   }
 }
+
+
