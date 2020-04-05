@@ -8,6 +8,7 @@ import Home from './components/homeComp.js';
 import About from './components/aboutComp.js';
 import Development from './components/developmentComp.js';
 import Games from './components/games.js';
+import Explore from './components/explore.js';
 
 
 const App = () => (
@@ -40,7 +41,14 @@ const App = () => (
       Play
         <span aria-hidden="true" class="three-d-box">
           <span class="front">Play</span>
-          <span class="back">Game</span>
+          <span class="back">Play</span>
+        </span>
+      </Link></li>
+      <li><Link to="/explore" class="three-d">
+        Explore
+        <span aria-hidden="true" class="three-d-box">
+          <span class="front">Explore</span>
+          <span class="back">Explore</span>
         </span>
       </Link></li>
       </ul>
@@ -48,25 +56,10 @@ const App = () => (
       <Route path="/about" component={About} />
       <Route path="/development" component={Development} />
       <Route path="/games" component={Games} />
+      <Route path="/explore" component={Explore} />
       </div>
       <div class="footer">
       <StickyFooter
-    bottomThreshold={30}
-    normalStyles={{
-      position: "fixed",
-    float: "middle",
-    bottom: 0,
-    width:"100%",
-    display: "flex",
-  "justify-content": "center",
-      }}
-    stickyStyles={{
-      float: "middle",
-    bottom: 0,
-    width:"100%",
-    display: "flex",
-  "justify-content": "center",
-    }}
 >
 <SocialIcon url="https://github.com/SarahLizDettloff"/>
 <SocialIcon url="mailto: sarah.liz.dettloff@gmail.com"/>

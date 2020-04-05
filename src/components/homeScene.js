@@ -176,6 +176,7 @@ render() {
             this.mount = mount;
           }}
         />
+        <button type="button">Click Me!</button>
 
       </div>
     );

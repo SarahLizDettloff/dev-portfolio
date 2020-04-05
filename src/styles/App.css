@@ -1,63 +1,9 @@
 .App {
   text-align: center;
-  background-color: #003632;
   scroll-behavior: smooth;
   overflow: scroll;
-  padding: 20;
-}
-h1 {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
 }
 
-
-p {
-  white-space: initial; 
-  overflow: show;
-  text-overflow: ellipsis;
-  margin: 10px;
-  padding: 30px;
-  text-align: center;
-  position: center;
-}
-
-h5
-{
-  display: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 30px;
-  margin-left: 25%;
-  margin-right: 25%;
-  font-size: 36px;
-  font-family: Georgia, serif;
-}
-h3
-{
-  top: 10px;
-  font-size: 20px;  
-  font-family: Georgia, serif;
-  align-items: right;
-  justify-content: right;
-  text-align: right;
-  overflow: show;
-  text-overflow: ellipsis;
-  position:absolute;
-  background-color: #003632;
-}
-
-h6
-{
-  padding: 20px;
-  margin-left: 20%;
-  margin-right: 20%;
-  font-size: 20px;
-  font-family: Georgia, serif;
-  width: 45%;
-}
 ::selection {
   background-color: #75807f;
   color: #D14990;
@@ -77,29 +23,21 @@ a {
   color: black;
 }
 .block-menu {
+  list-style-type: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
-  position: fixed;
-  right:0;
-  bottom: 0;
-  top: 10px;
-  padding: 5px;
-  height: 100%;
-  z-index: 99;
 }
 
-
 .block-menu li a {
-	color: #fff;
-	display: block;
-	text-decoration: none;
+	color: #E9F8EF;
 	font-family: Georgia, serif;
-	text-transform: uppercase;
-	overflow: visible;
-	line-height: 20px;
-	font-size: 24px;
-  padding: 15px 10px;
-  z-index: 99;
-  bottom: 0;
+  float: right;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
 }
 
 .three-d {
@@ -108,14 +46,14 @@ a {
 	transition: all .07s linear;
 	position: relative;
   cursor: pointer;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+
 }
 	.three-d:hover .three-d-box, 
 	.three-d:focus .three-d-box {
     transform: translateZ(-25px) rotateX(90deg);
     transition: 0.3s ease all;
     z-index: 99;
+    text-shadow: 0 -1px 4px #6C5F8C, 0 -2px 10px #40238A, 0 -10px 20px #6D4DBF, 0 -18px 40px #341C71;
 	}
 
 .three-d-box {
@@ -126,7 +64,7 @@ a {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-  display: block;
+  display: inline;
   z-index: 99;
 	width: 100%;
 	height: 100%;
@@ -139,8 +77,9 @@ a {
 
 .back {
 	transform: rotatex(-90deg) translatez(25px);
-  color: #003632;
+  color: #363636;
   z-index: 99;
+  opacity: 0.6;
 }
 
 .front, .back {
@@ -150,21 +89,21 @@ a {
 	position: absolute;
 	top: 5px;
 	left: 0;
-	background: #6B447C;
+	background: #575353;
 	padding: 15px 10px;
-	color: #003632;
+	color: #E9F8EF;
 	pointer-events: none;
   box-sizing: border-box;
   z-index: 99;
 }
 
 .footer {
-  position: fixed;
   width: 100%;
-  height: 15%;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  background-color: #363636;
+  text-align: center;
+  opacity: 0.9;
+  position:fixed;
+  bottom:0px;
 }
 
 @keyframes App-logo-spin {

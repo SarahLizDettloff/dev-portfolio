@@ -1,0 +1,85 @@
+.App {
+text-align: center;
+scroll-behavior: smooth;
+overflow: scroll;
+padding: 10px;
+
+}
+.complete {
+  position: absolute; 
+  top: 0; 
+  right: 0;
+  width: 100%; height: 100%;
+}
+body {
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+    background-image:
+linear-gradient(to bottom, rgba(117, 19, 93, 0.73), rgba(255, 255, 255, 0.52)),
+url('../assets/bgNature/9.jpg');
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 900;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    padding-bottom: 150px;
+    font-family: Georgia, serif;
+    letter-spacing: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+    -webkit-text-fill-color: #D8E7DE;
+    background-color: #363636;
+    text-shadow: 0 1px 0 #361A80, 
+                   0 2px 0 #2D1373,
+                   0 3px 0 #230B64,
+                   0 4px 0 #1B0652,
+                   0 5px 0 #0E022E,
+                   0 6px 1px rgba(0,0,0,.1),
+                   0 0 5px rgba(0,0,0,.1),
+                   0 1px 3px rgba(0,0,0,.3),
+                   0 3px 5px rgba(0,0,0,.2),
+                   0 5px 10px rgba(0,0,0,.25),
+                   0 10px 10px rgba(0,0,0,.2),
+                   0 20px 20px rgba(0,0,0,.15);
+}
+
+.homeBody {
+    color: #D8E7DE;
+    -webkit-text-fill-color: #D8E7DE;
+    font-family: Georgia, serif;
+    padding-bottom: 15em;
+    left: 16px;
+    font-size: 36;
+    padding-left: 15px;
+    float: left;
+    font-weight: 800;
+
+}
+
+a {
+color: #b8bfc1;
+padding: 15px;
+margin: 10px;
+}
+
+
+.App-link {
+color: black;
+}
+
+@keyframes App-logo-spin {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+}
