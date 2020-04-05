@@ -59,12 +59,10 @@ const App = () => (
       <Route path="/explore" component={Explore} />
       </div>
       <div class="footer">
-      <StickyFooter
->
+
 <SocialIcon url="https://github.com/SarahLizDettloff"/>
 <SocialIcon url="mailto: sarah.liz.dettloff@gmail.com"/>
 <SocialIcon url="https://www.linkedin.com/in/sarah-dettloff-86a029103/"/>
-</StickyFooter>
     </div>
     </HashRouter>
 );
