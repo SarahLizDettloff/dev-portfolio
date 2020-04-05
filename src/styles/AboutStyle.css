@@ -10,7 +10,7 @@
   
   p {
   background-color: rgba(60, 10, 198, 0.81);
-  font-size: 20px;
+  font-size: 12px;
   font-family: Georgia, serif;
   letter-spacing: 2px;
   text-align: center;
@@ -168,7 +168,7 @@
     -moz-border-radius: 100px;
   }
   .about {
-  font-size: 2em;
+  font-size: 24px;
   letter-spacing: 4px;
   margin-top: -15%;
   font-size: 100;
