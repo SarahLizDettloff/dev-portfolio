@@ -1,6 +1,4 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
-import { render } from 'react-dom';
 import Gallery from 'react-grid-gallery';
 
 import '../styles/DevStyle.css';

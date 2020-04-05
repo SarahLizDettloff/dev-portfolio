@@ -98,12 +98,9 @@ a {
 }
 
 .footer {
-  width: 100%;
   background-color: #363636;
   text-align: center;
   opacity: 0.9;
-  position:fixed;
-  bottom:0px;
 }
 
 @keyframes App-logo-spin {
