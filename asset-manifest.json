@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dev-portfolio/static/css/main.06dfcbb0.chunk.css",
+    "main.css": "/dev-portfolio/static/css/main.d4a49c02.chunk.css",
     "main.js": "/dev-portfolio/static/js/main.15a8ff51.chunk.js",
     "main.js.map": "/dev-portfolio/static/js/main.15a8ff51.chunk.js.map",
     "runtime~main.js": "/dev-portfolio/static/js/runtime~main.e91790c5.js",
@@ -8,9 +8,9 @@
     "static/js/2.975fe6c8.chunk.js": "/dev-portfolio/static/js/2.975fe6c8.chunk.js",
     "static/js/2.975fe6c8.chunk.js.map": "/dev-portfolio/static/js/2.975fe6c8.chunk.js.map",
     "index.html": "/dev-portfolio/index.html",
-    "precache-manifest.f31012bc871e16bd44dfa60dc6436fa9.js": "/dev-portfolio/precache-manifest.f31012bc871e16bd44dfa60dc6436fa9.js",
+    "precache-manifest.cb05e581d4fca62616d2719835a31bda.js": "/dev-portfolio/precache-manifest.cb05e581d4fca62616d2719835a31bda.js",
     "service-worker.js": "/dev-portfolio/service-worker.js",
-    "static/css/main.06dfcbb0.chunk.css.map": "/dev-portfolio/static/css/main.06dfcbb0.chunk.css.map",
+    "static/css/main.d4a49c02.chunk.css.map": "/dev-portfolio/static/css/main.d4a49c02.chunk.css.map",
     "static/media/Home.css": "/dev-portfolio/static/media/9.05257f5a.jpg",
     "static/media/basiccalculator.png": "/dev-portfolio/static/media/basiccalculator.72dab0d9.png",
     "static/media/cheeseOnThatScreenshot.png": "/dev-portfolio/static/media/cheeseOnThatScreenshot.a7849efc.png",
