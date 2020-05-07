@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import * as THREE from "three";
 
 import '../styles/Canvas.css';
-import sky from '../assets/skybox/waterfall.jpg';
+import sky from '../assets/skybox/mt.png';
 
 
 const OrbitControls = require("three-orbit-controls")(THREE);
   class Shape extends Component {
+    
     constructor(props) {
       super(props);
       this.animate = this.animate.bind(this);
@@ -20,7 +21,7 @@ componentDidMount() {
     const width = this.mount.clientWidth;
     const height = this.mount.clientHeight;
     this.scene = new THREE.Scene();
-    this.camera = new THREE.PerspectiveCamera(100, width / height, 0.15, 500);
+    this.camera = new THREE.PerspectiveCamera(100, width / height, 0.15, 100);
     this.camera.position.set( 0, 1.5, 3 );
     this.scene.add( new THREE.AmbientLight( 0x505050 ) );
 
@@ -30,9 +31,9 @@ componentDidMount() {
     spotLight.position.set( 2, 3, 3 );
     spotLight.castShadow = true;
     spotLight.shadow.camera.near = 3;
-    spotLight.shadow.camera.far = 10;
-    spotLight.shadow.mapSize.width = 1024;
-    spotLight.shadow.mapSize.height = 1024;
+    spotLight.shadow.camera.far = 5;
+    spotLight.shadow.mapSize.width = 100;
+    spotLight.shadow.mapSize.height = 300;
     this.scene.add( spotLight );
 
     var dirLight = new THREE.DirectionalLight( 0x55505a, 1 );
@@ -48,14 +49,9 @@ componentDidMount() {
     dirLight.shadow.mapSize.height = 1024;
     this.scene.add( dirLight );
 
-    var planeGeo = new THREE.PlaneGeometry(500, 1, 500 );
-    var planeMaterial = new THREE.MeshBasicMaterial({color: "#68BBD1", side: THREE.DoubleSide});
-    var plane = new THREE.Mesh( planeGeo, planeMaterial);
-    plane.position.set(0, -5, 0);
-    this.scene.add(plane);
-
     this.renderer = new THREE.WebGLRenderer({ antialias: true });
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
+    this.controls.maxDistance = 5;
     this.renderer.setSize(width, height);
     this.mount.appendChild(this.renderer.domElement);
     this.initializeOrbits();
@@ -175,11 +171,13 @@ render() {
       <div>
         <div
           id="boardCanvas"
-          style={{ width: "100%", height: "40vw"}}
+          style={{ width: "100%", height: "50vw"}}
           ref={mount => {
             this.mount = mount;
           }}
         />
+        <button type="button">Click Me!</button>
+
       </div>
     );
   }

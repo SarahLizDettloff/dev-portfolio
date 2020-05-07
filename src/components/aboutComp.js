@@ -8,10 +8,9 @@ import face from '../assets/my_face.png';
 
 const About = () => 
 (
-  <div>
-
-    <h2>
-      <div class="flip-card">
+  <div class="aboutContainer">
+ <h1>
+ <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src={me} alt="walk_away"></img>
@@ -21,21 +20,13 @@ const About = () =>
           </div>  
         </div>
       </div>
-    </h2>
- <h3>Bio</h3>
+</h1>
  <div class ="about">
-  <p>I am a test software engineer in digital promotions with a background in biotechnology. I worked in retail management full time through college while focusing on completing the associates in biotechnology. I was introduced to coding during my internship at Wake Forest Institute for Regenerative Medicine. Programming captured my attention because of the freedom and creativity you can express through it. I appreciate the open source resources that have enabled my skills to grow and give back as availability allows. </p>
-  <p>I have a hunger for constant growth in programming which is fueled by my curiosity. My experience is spread across game, mobile, software and web development. From my appreciation of open source projections, I contribute annually to DigitalOcean’s Hacktoberfest. 
-  <br></br>A recap of some of my technical skills:
-  <br></br>
--	2 years professional experience in web framework development consisting of REST APIs for the backend, and two years of experience in front end development and design. 
-<br></br>
--	3 years experience in Visual Studio using C#, C++, and Visual Basic. 
-<br></br>
--	3 years experience in game development working in a wide variety of environments with Game Maker Studio, Godot, CodeBlocks(C++), Unreal Engine, and Unity. 
-<br></br>
-- 3 years participation in Hacktoberfest hosted by Digital Ocean: 2017, 2018, and 2019
+ <h3> Hello.</h3>
+  <p>Development allows a place for creativity and problem solving which provides enjoyment in producing game, mobile, web, and software applications. I have two years enterprise experience in web framework development consisting of REST APIs, front end and back end. In my lesure time, I have three years experience in Visual Studio using C#, C++, and Visual Basic and three years in game development working in a wide variety of environments with Game Maker Studio, Godot, and Unity. In the previous three years,  I have also contributed to Hacktoberfest hosted by Digital Ocean (2017, 2018, 2019).
 </p>
+<br></br>
+<p>Take a look around, feedback is welcome on this project or any others in my portfolio.</p>
 </div>
   </div>
 );

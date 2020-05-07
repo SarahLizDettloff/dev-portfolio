@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "node"
+cache:
+  directories:
+    - node_modules
+script:
+  - react-scripts build
+deploy:
+  skip_cleanup: true
+  project: ./build/
+on:
+  branch: CleanStyleUpdate
