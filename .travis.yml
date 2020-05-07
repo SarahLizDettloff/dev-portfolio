@@ -10,4 +10,4 @@ deploy:
   skip_cleanup: true
   project: ./build/
 on:
-  branch: CleanStyleUpdate
+  branch: master
