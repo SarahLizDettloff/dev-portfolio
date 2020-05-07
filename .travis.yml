@@ -6,8 +6,9 @@ cache:
     - node_modules
 script:
   - react-scripts build
-deploy:
-  skip_cleanup: true
-  project: ./build/
-on:
-  branch: master
+install: true
+
+branches:
+  only:
+  - master
+
