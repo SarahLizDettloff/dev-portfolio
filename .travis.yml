@@ -1,14 +1,14 @@
 language: node_js
 node_js:
-  - "node"
+  - "12"
 cache:
   directories:
     - node_modules
 script:
   - react-scripts build
 install: true
-
 branches:
   only:
   - master
+  - 2.0
 

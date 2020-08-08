@@ -32,7 +32,7 @@ I have two and a half years enterprise experience in web framework development c
 Open-source software has been a foundation of programming and growth. In order to give back, I have contributed to Hacktoberfest hosted by Digital Ocean for the previous three years. I have the pleasure to have code in the Arctic Code Vault.
 <br></br>
 <br></br>
-In my leisure time, I enjoy challenging myself in different coding aspects. One of my favorite parts of coding is that your mind is your limit. Game development poses an interesting situation as a developer to compile design, story telling, programming, and fulfill the feel of the game that you have imagined. Unity is my primary choice for a game engine since it gives the user enough freedom to execute their vision, but has built in capabilties to do the heavy lifting for you. Unity is a eminent for android development. React Native along with expo are excellent frameworks for mobile dev that streamline fast development with a smooth finish.
+In my leisure time, I enjoy challenging myself in different coding aspects. One of my favorite parts of coding is that your mind is your limit. Game development poses an interesting situation as a developer to compile design, programming, and fulfill the feel of the game that you have imagined. Unity is my primary choice for a game engine since it gives the user enough freedom to execute their vision, but has built in capabilties to do the heavy lifting for you. Unity is a eminent for android development. React Native along with expo are excellent frameworks for mobile dev that streamline fast development with a smooth finish.
 <br></br>
 <br></br>
 Thank you for stopping by.
