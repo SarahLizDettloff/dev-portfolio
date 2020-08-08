@@ -2,19 +2,18 @@
   background-color: #363636;
   overflow: auto;
   }
-  
-  
+
   ul {
   color: rgba(60, 10, 198, 0.81);
   }
   
   p {
-  background-color: rgba(60, 10, 198, 0.81);
-  font-size: 12px;
+
+  font-size: 16px;
   font-family: Georgia, serif;
   letter-spacing: 2px;
   text-align: center;
-  color: #D8E7DE;
+  color: white;
   padding: 20px;
   }
   
@@ -63,9 +62,9 @@
     background-color: #363636;
   }
   h3 {
-  margin-top:18%;
   font-size: 50px;
   margin-left: -65%;
+  height: 100%;
   font-family: Georgia, serif;
   position: relative;
   letter-spacing: 8px;
@@ -126,7 +125,7 @@
   justify-content: center;
   text-align: center;
   background-color: transparent;
-  perspective: 900px; 
+  perspective: 900px;
   padding: 15px;
   position: absolute;
   top: 5%;
@@ -136,28 +135,29 @@
   width: 200px;
   height: 150px;
   }
-  
+
   .flip-card-inner {
   position: relative;
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  padding-bottom: 10px;
   }
-  
+
   .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
   }
-  
+
   .flip-card-front, .flip-card-back {
   position: absolute;
   width: 70%;
   height: 70%;
   backface-visibility: hidden;
   }
-  
-  
+
+
   .flip-card-back {
   transform: rotateY(180deg);
   }
@@ -169,16 +169,11 @@
   }
   .about {
   font-size: 24px;
-  letter-spacing: 4px;
-  margin-top: -15%;
-  font-size: 100;
   letter-spacing: 8px;
-  background-color: rgba(0, 54, 50, 0.38);
+  background-color: rgba(0, 75, 145, 0.38);
   color: #363636; 
   width: 65%;
   margin-left: 30%;
-  margin-bottom: 5%;
-  padding-left: 20px;
   line-height: 2;
   display:flex;
   flex-direction:column;
