@@ -11,3 +11,4 @@ install: true
 branches:
   only:
   - master
+
