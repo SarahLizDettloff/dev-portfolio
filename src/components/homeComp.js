@@ -8,7 +8,7 @@ const Home = () => (
     <h2>Sarah Dettloff
     </h2>
     <h4 class = "homeBody">
-     Developer
+     Web, Android, Unity Developer
     </h4>
 
 
