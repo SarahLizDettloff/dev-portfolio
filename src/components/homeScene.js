@@ -3,6 +3,14 @@ import * as THREE from "three";
 
 import '../styles/Canvas.css';
 import sky from '../assets/skybox/mt.png';
+import lakeSide from '../assets/skybox/lakeSide.png';
+import garden from '../assets/skybox/chinese_garden.png';
+import leadenhall_market from '../assets/skybox/leadenhall_market.png';
+import vignaioli_night from '../assets/skybox/vignaioli_night.png';
+import kiaraDawn from '../assets/skybox/kiaraDawn.png';
+import winterEvening from '../assets/skybox/winterEvening.png';
+import mutianyu from '../assets/skybox/mutianyu.png';
+import veniceSunset from '../assets/skybox/veniceSunset.png';
 
 
 const OrbitControls = require("three-orbit-controls")(THREE);
@@ -116,7 +124,7 @@ skyBox() {
       side: THREE.BackSide,
     });
 		material.uniforms.tEquirect.value = texture;
-    const plane = new THREE.BoxBufferGeometry(15, 15, 15);
+	const plane = new THREE.BoxBufferGeometry(15, 15, 15);
     this.bgMesh = new THREE.Mesh(plane, material);
     this.scene.add(this.bgMesh);
   }
@@ -166,6 +174,180 @@ addLight(light) {
     this.scene.add(light);
   }
 
+lakeSide() {
+    const loader = new THREE.TextureLoader();
+    const texture = loader.load(
+      lakeSide,
+    );
+    texture.magFilter = THREE.LinearFilter;
+    texture.minFilter = THREE.LinearFilter;
+
+    const shader = THREE.ShaderLib.equirect;
+		const material = new THREE.ShaderMaterial({
+      fragmentShader: shader.fragmentShader,
+      vertexShader: shader.vertexShader,
+      uniforms: shader.uniforms,
+      depthWrite: false,
+      side: THREE.BackSide,
+    });
+		material.uniforms.tEquirect.value = texture;
+  }
+
+
+capehill() {
+    const loader = new THREE.TextureLoader();
+    const texture = loader.load(
+      sky,
+    );
+    texture.magFilter = THREE.LinearFilter;
+    texture.minFilter = THREE.LinearFilter;
+
+    const shader = THREE.ShaderLib.equirect;
+		const material = new THREE.ShaderMaterial({
+      fragmentShader: shader.fragmentShader,
+      vertexShader: shader.vertexShader,
+      uniforms: shader.uniforms,
+      depthWrite: false,
+      side: THREE.BackSide,
+    });
+		material.uniforms.tEquirect.value = texture;
+  }
+
+chineseGarden() {
+    const loader = new THREE.TextureLoader();
+    const texture = loader.load(
+      garden,
+    );
+    texture.magFilter = THREE.LinearFilter;
+    texture.minFilter = THREE.LinearFilter;
+
+    const shader = THREE.ShaderLib.equirect;
+		const material = new THREE.ShaderMaterial({
+      fragmentShader: shader.fragmentShader,
+      vertexShader: shader.vertexShader,
+      uniforms: shader.uniforms,
+      depthWrite: false,
+      side: THREE.BackSide,
+    });
+		material.uniforms.tEquirect.value = texture;
+  }
+
+leadenhall_market() {
+    const loader = new THREE.TextureLoader();
+    const texture = loader.load(
+      leadenhall_market,
+    );
+    texture.magFilter = THREE.LinearFilter;
+    texture.minFilter = THREE.LinearFilter;
+
+    const shader = THREE.ShaderLib.equirect;
+		const material = new THREE.ShaderMaterial({
+      fragmentShader: shader.fragmentShader,
+      vertexShader: shader.vertexShader,
+      uniforms: shader.uniforms,
+      depthWrite: false,
+      side: THREE.BackSide,
+    });
+		material.uniforms.tEquirect.value = texture;
+  }
+
+vignaioli_night() {
+    const loader = new THREE.TextureLoader();
+    const texture = loader.load(
+      vignaioli_night,
+    );
+    texture.magFilter = THREE.LinearFilter;
+    texture.minFilter = THREE.LinearFilter;
+
+    const shader = THREE.ShaderLib.equirect;
+	const material = new THREE.ShaderMaterial({
+      fragmentShader: shader.fragmentShader,
+      vertexShader: shader.vertexShader,
+      uniforms: shader.uniforms,
+      depthWrite: false,
+      side: THREE.BackSide,
+    });
+		material.uniforms.tEquirect.value = texture;
+  }
+
+
+kiaraDawn() {
+    const loader = new THREE.TextureLoader();
+    const texture = loader.load(
+      kiaraDawn,
+    );
+    texture.magFilter = THREE.LinearFilter;
+    texture.minFilter = THREE.LinearFilter;
+
+    const shader = THREE.ShaderLib.equirect;
+	const material = new THREE.ShaderMaterial({
+      fragmentShader: shader.fragmentShader,
+      vertexShader: shader.vertexShader,
+      uniforms: shader.uniforms,
+      depthWrite: false,
+      side: THREE.BackSide,
+    });
+		material.uniforms.tEquirect.value = texture;
+  }
+
+winterEvening() {
+    const loader = new THREE.TextureLoader();
+    const texture = loader.load(
+      winterEvening,
+    );
+    texture.magFilter = THREE.LinearFilter;
+    texture.minFilter = THREE.LinearFilter;
+
+    const shader = THREE.ShaderLib.equirect;
+	const material = new THREE.ShaderMaterial({
+      fragmentShader: shader.fragmentShader,
+      vertexShader: shader.vertexShader,
+      uniforms: shader.uniforms,
+      depthWrite: false,
+      side: THREE.BackSide,
+    });
+		material.uniforms.tEquirect.value = texture;
+  }
+
+mutianyu() {
+    const loader = new THREE.TextureLoader();
+    const texture = loader.load(
+      mutianyu,
+    );
+    texture.magFilter = THREE.LinearFilter;
+    texture.minFilter = THREE.LinearFilter;
+
+    const shader = THREE.ShaderLib.equirect;
+	const material = new THREE.ShaderMaterial({
+      fragmentShader: shader.fragmentShader,
+      vertexShader: shader.vertexShader,
+      uniforms: shader.uniforms,
+      depthWrite: false,
+      side: THREE.BackSide,
+    });
+		material.uniforms.tEquirect.value = texture;
+  }
+
+veniceSunset() {
+    const loader = new THREE.TextureLoader();
+    const texture = loader.load(
+      veniceSunset,
+    );
+    texture.magFilter = THREE.LinearFilter;
+    texture.minFilter = THREE.LinearFilter;
+
+    const shader = THREE.ShaderLib.equirect;
+	const material = new THREE.ShaderMaterial({
+      fragmentShader: shader.fragmentShader,
+      vertexShader: shader.vertexShader,
+      uniforms: shader.uniforms,
+      depthWrite: false,
+      side: THREE.BackSide,
+    });
+		material.uniforms.tEquirect.value = texture;
+  }
+
+
 render() {
     return (
       <div>
@@ -176,8 +358,19 @@ render() {
             this.mount = mount;
           }}
         />
-        <button type="button">Click Me!</button>
+        <nav>
+        <button type="button" class="button1" onClick={this.lakeSide}>Lake Side</button>
+        <button type="button" class="button2" onClick={this.capehill}>Cape Hill</button>
+        <button type="button" class="button3" onClick={this.chineseGarden}>Chinese Garden</button>
+        <button type="button" class="button4" onClick={this.vignaioli_night}>Vignaioli Night</button>
+        <button type="button" class="button5" onClick={this.leadenhall_market}>Leadenhall Market</button>
+        <button type="button" class="button6" onClick={this.kiaraDawn}>Kiara Dawn</button>
+        <button type="button" class="button7" onClick={this.winterEvening}>Winter Evening</button>
+        <button type="button" class="button8" onClick={this.mutianyu}>Mutianyu</button>
+        <button type="button" class="button9" onClick={this.veniceSunset}>Venice Sunset</button>
 
+        </nav>
+        <p class="kudos">Skybox image is kudos of<a href="https://hdrihaven.com/">HDRI Haven</a> </p>
       </div>
     );
   }

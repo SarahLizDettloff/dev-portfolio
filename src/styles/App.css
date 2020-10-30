@@ -79,7 +79,6 @@ a {
 	transform: rotatex(-90deg) translatez(25px);
   color: #363636;
   z-index: 99;
-  opacity: 0.6;
 }
 
 .front, .back {
@@ -99,9 +98,7 @@ a {
 
 .footer {
   width: 100%;
-  background-color: #363636;
   text-align: center;
-  opacity: 0.9;
   position:fixed;
   bottom:0px;
 }

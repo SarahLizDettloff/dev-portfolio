@@ -6,7 +6,6 @@ import { SocialIcon } from 'react-social-icons';
 import Home from './components/homeComp.js';
 import About from './components/aboutComp.js';
 import Development from './components/developmentComp.js';
-import Games from './components/games.js';
 import Explore from './components/explore.js';
 
 
@@ -36,13 +35,6 @@ const App = () => (
           <span class="back">Development</span>
         </span>
       </Link></li>
-            <li><Link to="/games" class="three-d">
-      Play
-        <span aria-hidden="true" class="three-d-box">
-          <span class="front">Play</span>
-          <span class="back">Play</span>
-        </span>
-      </Link></li>
       <li><Link to="/explore" class="three-d">
         Explore
         <span aria-hidden="true" class="three-d-box">
@@ -54,7 +46,6 @@ const App = () => (
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/development" component={Development} />
-      <Route path="/games" component={Games} />
       <Route path="/explore" component={Explore} />
       </div>
       <div class="footer">

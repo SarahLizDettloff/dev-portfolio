@@ -3,7 +3,7 @@ import Gallery from 'react-grid-gallery';
 
 import '../styles/DevStyle.css';
 
-import cheese from '../assets/cheeseOnThatScreenshot.png';
+import cheese from '../assets/cheese.gif';
 import lyric_analysis from '../assets/lyric_analysis.png';
 import basicCal from '../assets/basiccalculator.png';
 import physicsApp from '../assets/physicsApp.png';
@@ -25,7 +25,6 @@ const IMAGES =
   thumbnail:plate,
   thumbnailWidth: 500,
   thumbnailHeight: 250,
-  isSelected: true,
 tags: [{value: "Mobile", title: "Mobile"}, {value: "Android", title: "Android"},  {value: "Unity", title: "Unity"}, {value: "C#", title: "C#"}],
   caption:   <div class="popup">
   <p className="title">Plate Break</p>
@@ -41,7 +40,6 @@ tags: [{value: "Mobile", title: "Mobile"}, {value: "Android", title: "Android"},
   thumbnail:marble,
   thumbnailWidth: 500,
   thumbnailHeight: 250,
-  isSelected: true,
 tags: [{value: "Unity", title: "Unity"}, {value: "C#", title: "C#"}, {value: "Windows", title: "Windows"}],
   caption:<div class="popup"> <p className="title">Marble Single Level</p>
             <p className="legend"> 
@@ -57,16 +55,15 @@ tags: [{value: "Unity", title: "Unity"}, {value: "C#", title: "C#"}, {value: "Wi
   thumbnail:cheese,
   thumbnailWidth: 700,
   thumbnailHeight: 900,
-  isSelected: true,
 tags: [{value: "Mobile", title: "Mobile"}, {value: "React", title: "React"}, {value: "JavaScript", title: "JavaScript"}],
   caption:            <div class="popup">
-            <p className="title">I Would Put Some Cheese On That</p>
+            <p className="title">Put Some Cheese On It</p>
             <p className="legend">
             Android app built with Expo and React Native. Mobile camera application that detects a face to place cheese upon. Features nine different cheeses.
             </p>
             <h4 className="references">
-            <a href="https://github.com/SarahLizDettloff/IWouldPutSomeCheeseOnThat">Repo</a>
-            <a href="https://github.com/SarahLizDettloff/IWouldPutSomeCheeseOnThat/raw/master/IWouldPutSomeCheeseOnThat.apk">Download</a>
+            <a href="https://github.com/SarahLizDettloff/PutCheeseOnIt">Repo</a>
+            <a href="https://github.com/SarahLizDettloff/PutCheeseOnIt/raw/master/PutCheeseOnIt.apk">Download</a>
             </h4>
           </div>
 },
@@ -75,7 +72,6 @@ tags: [{value: "Mobile", title: "Mobile"}, {value: "React", title: "React"}, {va
   thumbnail:lyric_analysis,
   thumbnailWidth: 320,
   thumbnailHeight: 174,
-  isSelected: true,
 tags: [{value: "Analytics", title: "Analytics"}, {value: "Python", title: "Python"}, {value: "JupyterLab", title: "JupyterLab"}],
   caption:            <div class="popup">
             <p className="title">Lyrical Analysis</p>
@@ -92,7 +88,6 @@ tags: [{value: "Analytics", title: "Analytics"}, {value: "Python", title: "Pytho
   thumbnail:physicsApp,
   thumbnailWidth: 300,
   thumbnailHeight: 310,
-  isSelected: true,
 tags: [{value: "Windows App", title: "Windows App"}, {value: "C#", title: "C#"}],
   caption:           <div class="popup">
             <p className="title">Windows Form Physics App C#</p>
@@ -112,7 +107,6 @@ tags: [{value: "Windows App", title: "Windows App"}, {value: "C#", title: "C#"}]
   thumbnail:molar,
   thumbnailWidth: 200,
   thumbnailHeight: 174,
-  isSelected: true,
 tags: [{value: "Windows App", title: "Windows App"}, {value: "C#", title: "C#"}],
   caption:            <div class="popup">
             <p className="title">Mass for Molar Solution</p>
@@ -129,7 +123,6 @@ tags: [{value: "Windows App", title: "Windows App"}, {value: "C#", title: "C#"}]
   thumbnail:basicCal,
   thumbnailWidth: 300,
   thumbnailHeight: 320,
-  isSelected: true,
 tags: [{value: "Windows App", title: "Windows App"}, {value: "C#", title: "C#"}],
   caption:            <div class="popup">
             <p className="title">Calculator</p>
@@ -147,7 +140,6 @@ tags: [{value: "Windows App", title: "Windows App"}, {value: "C#", title: "C#"}]
   thumbnail:quantum,
   thumbnailWidth: 320,
   thumbnailHeight: 300,
-  isSelected: true,
 tags: [{value: "Windows App", title: "Windows App"}, {value: "Q#", title: "Q#"}],
   caption:             <div class="popup">
             <p className="title">Quantum Algorithms</p>
@@ -164,7 +156,6 @@ tags: [{value: "Windows App", title: "Windows App"}, {value: "Q#", title: "Q#"}]
   thumbnail:linegraph,
   thumbnailWidth: 500,
   thumbnailHeight: 250,
-  isSelected: true,
 tags: [{value: "Analytics", title: "Analytics"}, {value: "Python", title: "Python"},  {value: "JupyterLab", title: "JupyterLab"}],
   caption: <div class="popup">
           <p className="title">Graphing Data</p>
@@ -181,7 +172,6 @@ tags: [{value: "Analytics", title: "Analytics"}, {value: "Python", title: "Pytho
   thumbnail:stock,
   thumbnailWidth: 320,
   thumbnailHeight: 300,
-  isSelected: true,
 tags: [{value: "Windows App", title: "Windows App"}, {value: "C#", title: "C#"}],
   caption:             <div class="popup">
             <p className="title">Stock Dividend Distributable Calculator</p>
@@ -199,7 +189,6 @@ tags: [{value: "Windows App", title: "Windows App"}, {value: "C#", title: "C#"}]
   thumbnail:hexconvert,
   thumbnailWidth: 400,
   thumbnailHeight: 200,
-  isSelected: true,
 tags: [{value: "Python", title: "Python"}, {value: "Calculator", title: "Calculator"}],
   caption:             <div class="popup">
             <p className="title">Hexadecimal to Decimal Calculator</p>
@@ -217,7 +206,6 @@ tags: [{value: "Python", title: "Python"}, {value: "Calculator", title: "Calcula
   thumbnail:decbin,
   thumbnailWidth: 320,
   thumbnailHeight: 300,
-  isSelected: true,
 tags: [{value: "Python", title: "Python"}],
   caption:            <div class="popup">
             <p className="title">Converter: Decimal to Binary</p>
@@ -235,7 +223,6 @@ tags: [{value: "Python", title: "Python"}],
   thumbnail:sinewave,
   thumbnailWidth: 320,
   thumbnailHeight: 174,
-  isSelected: true,
 tags: [{value: "Python", title: "Python"}, {value: "Physics", title: "Physics"}],
   caption:            <div>
             <p className="title">Python Physics Calculator</p>
