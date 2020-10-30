@@ -1,4 +1,4 @@
-# [dev-portfolio](https://sarahlizdettloff.github.io/dev-portfolio/#/) [![Build Status](https://travis-ci.com/SarahLizDettloff/dev-portfolio.svg?branch=master)](https://travis-ci.org/travis-ci/travis-web)
+# [dev-portfolio](https://sarahlizdettloff.github.io/dev-portfolio/#/) [![Build Status](https://travis-ci.org/SarahLizDettloff/dev-portfolio.svg?branch=master)](https://travis-ci.org/SarahLizDettloff/dev-portfolio)
 > Built with React, this is my development portfolio website. 
 
 
