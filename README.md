@@ -1,11 +1,13 @@
-[![Build Status](https://travis-ci.com/SarahLizDettloff/dev-portfolio.svg?branch=master)](https://travis-ci.org/travis-ci/travis-web)
+# [dev-portfolio](https://sarahlizdettloff.github.io/dev-portfolio/#/) [![Build Status](https://travis-ci.com/SarahLizDettloff/dev-portfolio.svg?branch=master)](https://travis-ci.org/travis-ci/travis-web)
+> Built with React, this is my development portfolio website. 
 
-# [dev-portfolio](https://sarahlizdettloff.github.io/dev-portfolio/#/)
 
-dev-portfolio is a react site that contains a portfolio of my coding projects.  
-Built with [React](https://github.com/facebook/create-react-ap), uses [three.js](https://github.com/mrdoob/three.js/).
+## Built with
+* [React](https://github.com/facebook/create-react-ap)
 
-## Installation
+* Uses [three.js](https://github.com/mrdoob/three.js/).
+
+## Getting Started
 
 ```bash
 git clone https://github.com/SarahLizDettloff/dev-portfolio.git
@@ -14,9 +16,6 @@ npm install
 npm start
 open http://localhost:3000
 ```
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
