@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "41deea98cbf34669c2722c86c59eae63",
+    "revision": "075a07c46b4e116f1a5defcc57969822",
     "url": "/dev-portfolio/index.html"
   },
   {
-    "revision": "9164e3717cb93f25f8b5",
+    "revision": "ccc42c1b4882ae0086d9",
     "url": "/dev-portfolio/static/css/main.6b38fc01.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dev-portfolio/static/js/2.29225fae.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9164e3717cb93f25f8b5",
-    "url": "/dev-portfolio/static/js/main.4be593aa.chunk.js"
+    "revision": "ccc42c1b4882ae0086d9",
+    "url": "/dev-portfolio/static/js/main.2c1108f7.chunk.js"
   },
   {
     "revision": "1e10e024f0899dac1144",
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dev-portfolio/static/media/basiccalculator.72dab0d9.png"
   },
   {
-    "revision": "a7849efc60fa30fa04d1064818836afc",
-    "url": "/dev-portfolio/static/media/cheeseOnThatScreenshot.a7849efc.png"
+    "revision": "b04c03aa83c87e6b4865bf26461885f8",
+    "url": "/dev-portfolio/static/media/cheese.b04c03aa.gif"
   },
   {
     "revision": "168d2571bd52c6dbfc4d205145e713e5",
