@@ -3,7 +3,7 @@ import Gallery from 'react-grid-gallery';
 
 import '../styles/DevStyle.css';
 
-import cheese from '../assets/cheeseOnThatScreenshot.png';
+import cheese from '../assets/cheese.gif';
 import lyric_analysis from '../assets/lyric_analysis.png';
 import basicCal from '../assets/basiccalculator.png';
 import physicsApp from '../assets/physicsApp.png';
@@ -57,13 +57,13 @@ tags: [{value: "Unity", title: "Unity"}, {value: "C#", title: "C#"}, {value: "Wi
   thumbnailHeight: 900,
 tags: [{value: "Mobile", title: "Mobile"}, {value: "React", title: "React"}, {value: "JavaScript", title: "JavaScript"}],
   caption:            <div class="popup">
-            <p className="title">I Would Put Some Cheese On That</p>
+            <p className="title">Put Some Cheese On It</p>
             <p className="legend">
             Android app built with Expo and React Native. Mobile camera application that detects a face to place cheese upon. Features nine different cheeses.
             </p>
             <h4 className="references">
-            <a href="https://github.com/SarahLizDettloff/IWouldPutSomeCheeseOnThat">Repo</a>
-            <a href="https://github.com/SarahLizDettloff/IWouldPutSomeCheeseOnThat/raw/master/IWouldPutSomeCheeseOnThat.apk">Download</a>
+            <a href="https://github.com/SarahLizDettloff/PutCheeseOnIt">Repo</a>
+            <a href="https://github.com/SarahLizDettloff/PutCheeseOnIt/raw/master/PutCheeseOnIt.apk">Download</a>
             </h4>
           </div>
 },
