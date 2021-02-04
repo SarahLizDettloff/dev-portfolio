@@ -2,8 +2,8 @@
 
 <p align="center">
 
-  <h3 align="center">dev-portfoli</h3>
-  <h4 align="center"> Portfolio website</h3>
+  <h3 align="center">dev-portfolio</h3>
+  <h4 align="center">Development Portfolio</h3>
 
   <p align="center">
     <a href="https://sarahlizdettloff.github.io/dev-portfolio">View</a>
