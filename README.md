@@ -1,6 +1,18 @@
-# [dev-portfolio](https://sarahlizdettloff.github.io/dev-portfolio/#/) [![Build Status](https://travis-ci.org/SarahLizDettloff/dev-portfolio.svg?branch=master)](https://travis-ci.org/SarahLizDettloff/dev-portfolio)
-> Built with React, this is my development portfolio website. 
+[![Build Status](https://travis-ci.org/SarahLizDettloff/dev-portfolio.svg?branch=master)](https://travis-ci.org/SarahLizDettloff/dev-portfolio)
 
+<p align="center">
+
+  <h3 align="center">dev-portfoli</h3>
+  <h4 align="center"> Portfolio website</h3>
+
+  <p align="center">
+    <a href="https://sarahlizdettloff.github.io/dev-portfolio">View</a>
+    ·
+    <a href="https://github.com/sarahlizdettloff/dev-portfolio/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/sarahlizdettloff/dev-portfolio/issues">Request Feature</a>
+  </p>
+</p>
 
 ## Built with
 * [React](https://github.com/facebook/create-react-ap)
