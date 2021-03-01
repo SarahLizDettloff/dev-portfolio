@@ -22,7 +22,7 @@
     "react-sticky-footer": "0.1.0-rc3",
     "reactstrap": "^8.0.1",
     "styled-components": "^4.3.2",
-    "three": "^0.106.2",
+    "three": "^0.125.0",
     "three-orbit-controls": "^82.1.0",
     "yarn": "^1.22.4"
   },
