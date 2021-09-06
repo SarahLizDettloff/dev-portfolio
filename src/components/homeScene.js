@@ -2,16 +2,18 @@ import React, { Component } from "react";
 import * as THREE from "three";
 
 import '../styles/Canvas.css';
-import sky from '../assets/skybox/mt.png';
-import lakeSide from '../assets/skybox/lakeSide.png';
-import garden from '../assets/skybox/chinese_garden.png';
-import leadenhall_market from '../assets/skybox/leadenhall_market.png';
-import vignaioli_night from '../assets/skybox/vignaioli_night.png';
-import kiaraDawn from '../assets/skybox/kiaraDawn.png';
-import winterEvening from '../assets/skybox/winterEvening.png';
-import mutianyu from '../assets/skybox/mutianyu.png';
-import veniceSunset from '../assets/skybox/veniceSunset.png';
 
+import artistWorkshop from '../assets/skybox/artist_workshop_4k.png';
+import garden from '../assets/skybox/chinese_garden.png';
+import kiaraDawn from '../assets/skybox/kiaraDawn.png';
+import lakeSide from '../assets/skybox/lakeSide.png';
+import leadenhall_market from '../assets/skybox/leadenhall_market.png';
+import mutianyu from '../assets/skybox/mutianyu.png';
+import sky from '../assets/skybox/mt.png';
+import veniceSunset from '../assets/skybox/veniceSunset.png';
+import vignaioli_night from '../assets/skybox/vignaioli_night.png';
+import winterEvening from '../assets/skybox/winterEvening.png';
+import zavelstein from '../assets/skybox/zavelstein_4k.png';
 
 const OrbitControls = require("three-orbit-controls")(THREE);
   class Shape extends Component {
@@ -30,7 +32,7 @@ componentDidMount() {
     const height = this.mount.clientHeight;
     this.scene = new THREE.Scene();
     this.camera = new THREE.PerspectiveCamera(100, width / height, 0.15, 100);
-    this.camera.position.set( 0, 1.5, 3 );
+    this.camera.position.set( 0, 0, 0 );
     this.scene.add( new THREE.AmbientLight( 0x505050 ) );
 
     var spotLight = new THREE.SpotLight( 0xffffff );
@@ -143,7 +145,7 @@ initializeOrbits() {
 initializeCamera() {
     this.camera.position.x = 0;
     this.camera.position.y = 0;
-    this.camera.position.z = 4;
+    this.camera.position.z = .1;
   }
   
 animate() {
@@ -347,6 +349,43 @@ veniceSunset() {
 		material.uniforms.tEquirect.value = texture;
   }
 
+  artistWorkshop() {
+    const loader = new THREE.TextureLoader();
+    const texture = loader.load(
+      artistWorkshop,
+    );
+    texture.magFilter = THREE.LinearFilter;
+    texture.minFilter = THREE.LinearFilter;
+
+    const shader = THREE.ShaderLib.equirect;
+	const material = new THREE.ShaderMaterial({
+      fragmentShader: shader.fragmentShader,
+      vertexShader: shader.vertexShader,
+      uniforms: shader.uniforms,
+      depthWrite: false,
+      side: THREE.BackSide,
+    });
+		material.uniforms.tEquirect.value = texture;
+  }
+
+  zavelstein() {
+    const loader = new THREE.TextureLoader();
+    const texture = loader.load(
+      zavelstein,
+    );
+    texture.magFilter = THREE.LinearFilter;
+    texture.minFilter = THREE.LinearFilter;
+
+    const shader = THREE.ShaderLib.equirect;
+		const material = new THREE.ShaderMaterial({
+      fragmentShader: shader.fragmentShader,
+      vertexShader: shader.vertexShader,
+      uniforms: shader.uniforms,
+      depthWrite: false,
+      side: THREE.BackSide,
+    });
+		material.uniforms.tEquirect.value = texture;
+  }
 
 render() {
     return (
@@ -358,17 +397,18 @@ render() {
             this.mount = mount;
           }}
         />
-        <nav>
-        <button type="button" class="button1" onClick={this.lakeSide}>Lake Side</button>
-        <button type="button" class="button2" onClick={this.capehill}>Cape Hill</button>
-        <button type="button" class="button3" onClick={this.chineseGarden}>Chinese Garden</button>
-        <button type="button" class="button4" onClick={this.vignaioli_night}>Vignaioli Night</button>
-        <button type="button" class="button5" onClick={this.leadenhall_market}>Leadenhall Market</button>
-        <button type="button" class="button6" onClick={this.kiaraDawn}>Kiara Dawn</button>
-        <button type="button" class="button7" onClick={this.winterEvening}>Winter Evening</button>
-        <button type="button" class="button8" onClick={this.mutianyu}>Mutianyu</button>
-        <button type="button" class="button9" onClick={this.veniceSunset}>Venice Sunset</button>
-
+        <nav class="ExploreLeftSideNav">
+          <button type="button" onClick={this.artistWorkshop}>Artist Workshop</button>
+          <button type="button" onClick={this.capehill}>Cape Hill</button>
+          <button type="button" onClick={this.chineseGarden}>Chinese Garden</button>
+          <button type="button" onClick={this.lakeSide}>Lake Side</button>
+          <button type="button" onClick={this.leadenhall_market}>Leadenhall Market</button>
+          <button type="button" onClick={this.kiaraDawn}>Kiara Dawn</button>
+          <button type="button" onClick={this.mutianyu}>Mutianyu</button>
+          <button type="button" onClick={this.veniceSunset}>Venice Sunset</button>
+          <button type="button" onClick={this.vignaioli_night}>Vignaioli Night</button>
+          <button type="button" onClick={this.winterEvening}>Winter Evening</button>
+          <button type="button" onClick={this.zavelstein}>Zavelstein</button>
         </nav>
         <p class="kudos">Skybox image is kudos of<a href="https://hdrihaven.com/">HDRI Haven</a> </p>
       </div>

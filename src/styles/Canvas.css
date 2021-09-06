@@ -7,159 +7,35 @@
     width: 100%; height: 100%;
 }
 
-.button1 {
-    position: absolute;
-    display: block;
-    z-index: 99;
-    top: 0%;
-    padding: 10px;
-    margin: 50px;
-    border-radius: 50%;
-      padding: 16px 32px;
+/* The side navigation menu */
+.ExploreLeftSideNav {
+  position: absolute;
+  top:0;
+  height: 100%;
+}
+
+/* The navigation menu links */
+.ExploreLeftSideNav button {
+  display: inline-block;
+  padding: 1px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px;
+  border-radius: 50%;
+  padding: 16px 32px;
   text-align: center;
   font-size: 16px;
   margin: 4px 2px;
   opacity: 0.6;
   transition: 0.3s;
   font-family: Georgia, serif;
-    }
+}
 
-.button2 {
-    position: absolute;
-    display: block;
-    z-index: 99;
-    top: 10%;
-    padding: 10px;
-    margin: 50px;
-    border-radius: 50%;
-      padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 0.6;
-  transition: 0.3s;
-  font-family: Georgia, serif;
-    }
-
-
-.button3 {
-    position: absolute;
-    display: block;
-    z-index: 99;
-    top: 20%;
-    padding: 10px;
-    margin: 50px;
-    border-radius: 50%;
-      padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 0.6;
-  transition: 0.3s;
-  font-family: Georgia, serif;
-    }
-
-.button4 {
-    position: absolute;
-    display: block;
-    z-index: 99;
-    top: 30%;
-    padding: 10px;
-    margin: 50px;
-    border-radius: 50%;
-      padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 0.6;
-  transition: 0.3s;
-  font-family: Georgia, serif;
-    }
-
-.button5 {
-    position: absolute;
-    display: block;
-    z-index: 99;
-    top: 40%;
-    padding: 10px;
-    margin: 50px;
-    border-radius: 50%;
-      padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 0.6;
-  transition: 0.3s;
-  font-family: Georgia, serif;
-    }
-
-.button6 {
-    position: absolute;
-    display: block;
-    z-index: 99;
-    top: 50%;
-    padding: 10px;
-    margin: 50px;
-    border-radius: 50%;
-      padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 0.6;
-  transition: 0.3s;
-  font-family: Georgia, serif;
-    }
-
-.button7 {
-    position: absolute;
-    display: block;
-    z-index: 99;
-    top: 60%;
-    padding: 10px;
-    margin: 50px;
-    border-radius: 50%;
-      padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 0.6;
-  transition: 0.3s;
-  font-family: Georgia, serif;
-    }
-
-.button8 {
-    position: absolute;
-    display: block;
-    z-index: 99;
-    top: 70%;
-    padding: 10px;
-    margin: 50px;
-    border-radius: 50%;
-      padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 0.6;
-  transition: 0.3s;
-  font-family: Georgia, serif;
-    }
-
-    .button9 {
-    position: absolute;
-    display: block;
-    z-index: 99;
-    top: 80%;
-    padding: 10px;
-    margin: 50px;
-    border-radius: 50%;
-      padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 0.6;
-  transition: 0.3s;
-  font-family: Georgia, serif;
-    }
+/* When you mouse over the navigation links, change their color */
+.ExploreLeftSideNav button:hover {
+  color: #2f7ac0;
+}
 
 .kudos {
     z-index: 99;

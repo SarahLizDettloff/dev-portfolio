@@ -22,15 +22,19 @@ const About = () =>
       </div>
 </h1>
  <div class ="about">
- <h3> Hello.</h3>
-<p>Development allows a place for creativity and problem solving that bring me much joy. The act of planning a product, thinking through the logic, coding it, and polishing satisfies my craving for creating. As a developer the creativity motivates me along with a strive for constant improvement.
+ <h3>  What's up?</h3>
+<p>Software Engineer here working in Digital Promotions at Inmar Intelligence. Development has flourished my constant strive for 
+  improvement and creativity. Four years experience working on RESTful APIs, front-end and back-end. Unit tests, automating products, 
+  upgrading frameworks, maintaining documentation, while maintaining high quality code. This can consist of deployments, monitoring 
+  performance, cloud architecture support, and addressing bugs.
 <br></br>
 <br></br>
-I have three years enterprise experience in web framework development consisting of RESTful APIs, front-end, and back-end programming. I am currently employed at Inmar Intelligence as a Test Software Engineer on the Digital Promotions team. Functional tests, product enhancements, new features, addressing bugs, maintaining documentation, and quality assuring the code fills my days there. One of my favorite aspects of it is automation for manual tasks which is completed mainly in Python. I enjoy collaborating with other teams to achieve success for clients and end users. Working through technical challenges to attain the next victory for the company is rewarding and motivates me to write simple solutions for complex problems.
+Enterprise experience in Python, Django framework and JavaScript, Vue framework. Hobby experience in C# and JavaScript. C# Unity scripting, and a hint of .NET.
+JavaScript React framework. Technology is always evolving. This encourages me to pickup new technologies, challenge my assertions,
+ and educate others. I enjoy collaboration to achieve success for clients, end users, and of course, the team.<br></br>
 <br></br>
-<br></br>
-In my leisure time, I enjoy challenging myself in different coding aspects. One of my favorite parts of coding is that your mind is your limit. Game development poses an interesting situation as a developer to compile design, programming, and fulfill the feel of the game that you have imagined. Unity is my primary choice for a game engine since it gives the user enough freedom to execute their vision, but has built in capabilities to do the heavy lifting for you. Android development I find enjoyable because it presents different challenges. I create an app where the user can swipe a plate across the screen and break it which was completed in Unity written in C#. Another mobile application I did was PutCheeseOnIt which uses face detection to place a slice of cheese on the detected face. I wrote it in React Native with Expo which I added Travis CI for build testing. 
-<br></br>
+Future programming goal is to be a senior software engineer. I would like to be a part of enterprise software design and stack 
+development with a focus on security.<br></br>
 <br></br>
 Thank you for stopping by.
 <br></br>
