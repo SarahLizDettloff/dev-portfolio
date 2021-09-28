@@ -5,6 +5,7 @@ import '../styles/DevStyle.css';
 
 import acnhGenerator from '../assets/acnhPhraseGenerator.png';
 import basicCal from '../assets/basiccalculator.png';
+import batsInTheSky from  '../assets/BatsIntheSkyPreview.gif';
 import cheese from '../assets/cheese.gif';
 import downloadIcon from '../assets/DownloadIcon.png';
 import githubRepoIcon from '../assets/GitRepoIcon.png';
@@ -22,6 +23,26 @@ import viewIcon from '../assets/ViewIcon.png';
 
 const IMAGES =
 [
+  {
+    src: batsInTheSky,
+    thumbnail:batsInTheSky,
+    thumbnailWidth: 700,
+    thumbnailHeight: 900,
+  tags: [{value: "Godot", title: "Godot"}, {value: "GDScript", title: "GDScript"}, {value: "Windows", title: "Windows"}],
+    caption:<div class="popup"> <p className="title">Bats In The Sky</p>
+              <p className="legend"> 
+              Play as an owl and dodge the bats in the sky.
+              </p>
+              <h4 className="references">
+                <a href="https://github.com/SarahLizDettloff/BatsInTheSky"> 
+                  <img alt="BatsInTheSkyRepo" src={githubRepoIcon} width="70" height="100"></img>
+                </a>
+                <a href="https://raw.githubusercontent.com/SarahLizDettloff/BatsInTheSky/blob/main/BatsInTheSky.zip">
+                  <img alt="BatsInTheSkyDownload" src={downloadIcon} width="80" height="80"></img>
+                </a>
+              </h4>
+            </div>
+  },
 {
   src: marble,
   thumbnail:marble,
