@@ -3,7 +3,7 @@
 <p align="center">
 
   <h3 align="center">dev-portfolio</h3>
-  <h4 align="center">Development Portfolio</h3>
+  <h4 align="center"><a href="https://sarahlizdettloff.github.io/dev-portfolio">Development Portfolio</a></h3>
 
   <p align="center">
     <a href="https://sarahlizdettloff.github.io/dev-portfolio">View</a>
