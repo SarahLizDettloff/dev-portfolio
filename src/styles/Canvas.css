@@ -20,30 +20,36 @@
   padding: 1px 8px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin: 50px;
-  border-radius: 50%;
   padding: 16px 32px;
   text-align: center;
-  font-size: 16px;
+  font-size: 1em;
   margin: 4px 2px;
   opacity: 0.6;
   transition: 0.3s;
-  font-family: Georgia, serif;
+  font-family: "DM Mono", sans-serif;
 }
 
 /* When you mouse over the navigation links, change their color */
 .ExploreLeftSideNav button:hover {
   color: #2f7ac0;
 }
-
+.ExploreLeftSideNav button:checked {
+  background:red;
+}
+kudos.legibility {
+  text-rendering: optimizeLegibility;
+}
+kudos.speed {
+  text-rendering: optimizeSpeed;
+}
 .kudos {
     z-index: 99;
-    left: 0%;
+    right: 0%;
     bottom: 0%;
         position: absolute;
     display: block;
-      text-align: center;
+      text-align: right;
   font-size: 16px;
-  font-family: Georgia, serif;
+  font-family: "DM Sans", sans-serif;
 }

@@ -3,35 +3,27 @@
   overflow: auto;
   }
 
-  ul {
-  color: rgba(60, 10, 198, 0.81);
-  }
-  
   p {
-    text-shadow: -1px 1px 0 #000,
-    1px 1px 0 #000,
-   1px -1px 0 #000;
-  font-size: 18px;
-  font-family: Georgia, serif;
+  font-size: 1em;
+  font-family: "DM Sans", sans-serif;
   letter-spacing: 2px;
   text-align: center;
   color: white;
-  padding: 20px;
+  padding: 10px;
+  margin: 20px;
   }
   
   h1 {
-  color: #D8E7DE;
+  color: white;
   background-color: #363636;
   display: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  text-shadow: 2px 2px 0 #000F0A, 2px -2px 0 #000F0A, -2px 2px 0 #000F0A, -2px -2px 0 #000F0A, 2px 0px 0 #000F0A, 0px 2px 0 #000F0A, -2px 0px 0 #000F0A, 0px -2px 0 #000F0A;   
   }
-  
+
   .prev, .next {
-  padding-top: 10px;
   padding-bottom: 10px;
   height: 100%;
   margin: 0 auto;
@@ -50,46 +42,26 @@
   height: 100%;
   background-color: rgba(0,0,0,0.8);
   }
-  
-  
   header {
-  background-color: #40238A;
+  background-color: black;   /* updated this for axe */ 
   }
   
   body {
-    background-color: #363636;
-    color: #40238A;
+    background-color: black;  /* updated this for axe */ 
+    color: white;  /* updated this for axe */ 
   }
   head {
-    background-color: #363636;
+    background-color: black;
   }
-  h3 {
-  font-size: 50px;
+  h3.aboutHeader {
+  font-size: 2.5em;
   float: center;
-  height: 100%;
-  font-family: Georgia, serif;
+  font-family: "DM Sans", sans-serif;
   position: relative;
-  letter-spacing: 8px;
+  letter-spacing: 3px;
   overflow: hidden;
   text-align: center;
-  background-repeat: no-repeat;
-  background-size: 80%;
-  -webkit-background-clip: text;
-  animation: animate 10s linear infinite;
-  -webkit-text-fill-color: #D8E7DE;
-  background-color: #363636;
-  text-shadow: 0 1px 0 #361A80, 
-                 0 2px 0 #2D1373,
-                 0 3px 0 #230B64,
-                 0 4px 0 #1B0652,
-                 0 5px 0 #0E022E,
-                 0 6px 1px rgba(0,0,0,.1),
-                 0 0 5px rgba(0,0,0,.1),
-                 0 1px 3px rgba(0,0,0,.3),
-                 0 3px 5px rgba(0,0,0,.2),
-                 0 5px 10px rgba(0,0,0,.25),
-                 0 10px 10px rgba(0,0,0,.2),
-                 0 20px 20px rgba(0,0,0,.15);
+  -webkit-text-fill-color: white;
   }
   @keyframes shine {
     from { -webkit-mask-position: 150%; }
@@ -110,11 +82,11 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 15px;
+  padding: 35px;
   margin-left: 25%;
   margin-right: 25%;
-  font-size: 50px;
-  font-family: Georgia, serif;
+  font-size:  0.8em;
+  font-family: "DM Mono", sans-serif;
   }
   h3 img  {
     border-radius: 50%;
@@ -170,9 +142,7 @@
     -moz-border-radius: 100px;
   }
   .about {
-  font-size: 24px;
-  letter-spacing: 8px;
-  background-color: rgba(0, 75, 145, 0.38);
+  background-color: rgba(0, 75, 145, 0.795);
   color: #363636; 
   width: 65%;
   margin-left: 30%;
@@ -183,9 +153,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  }
-  .imgstyle {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   a {
   color: white;
