@@ -1,17 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import Shape from '../components/homeScene.js';
+import Shape from "../components/exploreComp.js";
 
-import '../styles/HomeStyle.css';
-
-
+import "../styles/Explore.css";
 
 const Explore = () => (
-    <div>
-    <body  class="complete">
+  <div class="complete">
     <Shape></Shape>
-</body>
-     </div>
-  );
+  </div>
+);
 
-  export default Explore;
+export default Explore;

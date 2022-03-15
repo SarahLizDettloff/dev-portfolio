@@ -4,12 +4,18 @@
   "private": true,
   "homepage": "https://sarahlizdettloff.github.io/dev-portfolio",
   "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.5.1",
+    "@mui/x-data-grid": "^5.6.1",
+    "browserslist": "^4.20.0",
     "gh-pages": "^2.0.1",
     "mdbreact": "^4.17.0",
-    "react": "^16.8.6",
+    "react": "^17.0.2",
     "react-animations": "^1.0.0",
     "react-dom": "^16.8.6",
     "react-grid-gallery": "^0.5.5",
+    "react-icons": "^4.3.1",
     "react-infinite-scroll-component": "^5.0.4",
     "react-motion-drawer": "^3.1.0",
     "react-page-scroller": "^2.0.3-beta",
@@ -22,7 +28,7 @@
     "react-sticky-footer": "0.1.0-rc3",
     "reactstrap": "^8.0.1",
     "styled-components": "^4.3.2",
-    "three": "^0.106.2",
+    "three": "^0.137.0",
     "three-orbit-controls": "^82.1.0",
     "yarn": "^1.22.4"
   },
@@ -34,25 +40,29 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "browserslist": {
     "production": [
-      ">0.2%",
+      ">0.3%",
+      "not ie 11",
       "not dead",
       "not op_mini all"
     ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 safari version"
+      "last 1 safari version",
+      ">0.3%",
+      "not ie 11",
+      "not dead",
+      "not op_mini all"
     ]
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "prettier": "2.5.1",
+    "pretty-quick": "^3.1.3"
   }
 }
