@@ -27,8 +27,6 @@ import vignaioli_night from "../assets/skybox/vignaioli_night.png";
 import winterEvening from "../assets/skybox/winterEvening.png";
 import zavelstein from "../assets/skybox/zavelstein_4k.png";
 
-const title = "";
-
 const OrbitControls = require("three-orbit-controls")(THREE);
 class Shape extends Component {
   constructor(props) {
