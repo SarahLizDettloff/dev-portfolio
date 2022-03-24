@@ -1,7 +1,6 @@
 import React from "react";
 import "./styles/App.css";
 import { HashRouter, Route, Link } from "react-router-dom";
-import { useIsMobile } from "./props/mobileFriendly.js";
 import Home from "./components/homeComp.js";
 import About from "./components/aboutComp.js";
 import Development from "./components/developmentComp.js";
