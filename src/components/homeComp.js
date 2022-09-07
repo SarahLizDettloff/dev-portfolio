@@ -13,7 +13,7 @@ const Home = () => (
     ></link>
     <h1 class="homeLocation">
       {" "}
-      <GoLocation aria-label="location icon" /> Winston-Salem, North Carolina
+      <GoLocation aria-label="location icon" /> Gilbert, Arizona
     </h1>
     <h2 class="homeTitle">Hi.</h2>
     <div class="homeIntro">
@@ -30,7 +30,7 @@ const Home = () => (
         <SiMinutemailer aria-label="email icon" />
       </a>
       <a
-        href="https://www.linkedin.com/in/sarah-dettloff-86a029103"
+        href="https://www.linkedin.com/in/sarah-d-86a029103"
         aria-label="Checkout my linked in."
       >
         <SiLinkedin aria-label="linked in icon" />
