@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/dev-portfolio/static/css/main.5ec1c7ce.chunk.css",
-    "main.js": "/dev-portfolio/static/js/main.eae84402.chunk.js",
-    "main.js.map": "/dev-portfolio/static/js/main.eae84402.chunk.js.map",
+    "main.css": "/dev-portfolio/static/css/main.2ced76a2.chunk.css",
+    "main.js": "/dev-portfolio/static/js/main.5b3a048d.chunk.js",
+    "main.js.map": "/dev-portfolio/static/js/main.5b3a048d.chunk.js.map",
     "runtime-main.js": "/dev-portfolio/static/js/runtime-main.ce1c534e.js",
     "runtime-main.js.map": "/dev-portfolio/static/js/runtime-main.ce1c534e.js.map",
-    "static/js/2.8222f4df.chunk.js": "/dev-portfolio/static/js/2.8222f4df.chunk.js",
-    "static/js/2.8222f4df.chunk.js.map": "/dev-portfolio/static/js/2.8222f4df.chunk.js.map",
+    "static/js/2.d03cb3d6.chunk.js": "/dev-portfolio/static/js/2.d03cb3d6.chunk.js",
+    "static/js/2.d03cb3d6.chunk.js.map": "/dev-portfolio/static/js/2.d03cb3d6.chunk.js.map",
     "index.html": "/dev-portfolio/index.html",
-    "precache-manifest.39ce5b9fc5e38b170955a388ada3f6e4.js": "/dev-portfolio/precache-manifest.39ce5b9fc5e38b170955a388ada3f6e4.js",
+    "precache-manifest.472b55769c7eb153fbd11f436d214df4.js": "/dev-portfolio/precache-manifest.472b55769c7eb153fbd11f436d214df4.js",
     "service-worker.js": "/dev-portfolio/service-worker.js",
-    "static/css/main.5ec1c7ce.chunk.css.map": "/dev-portfolio/static/css/main.5ec1c7ce.chunk.css.map",
-    "static/js/2.8222f4df.chunk.js.LICENSE.txt": "/dev-portfolio/static/js/2.8222f4df.chunk.js.LICENSE.txt",
+    "static/css/main.2ced76a2.chunk.css.map": "/dev-portfolio/static/css/main.2ced76a2.chunk.css.map",
+    "static/js/2.d03cb3d6.chunk.js.LICENSE.txt": "/dev-portfolio/static/js/2.d03cb3d6.chunk.js.LICENSE.txt",
     "static/media/BatsIntheSkyPreview.gif": "/dev-portfolio/static/media/BatsIntheSkyPreview.d0cd8a59.gif",
     "static/media/MarblingPreview.gif": "/dev-portfolio/static/media/MarblingPreview.22b865cb.gif",
     "static/media/acnhPhraseGeneratorResized.png": "/dev-portfolio/static/media/acnhPhraseGeneratorResized.b9e097c1.png",
@@ -41,8 +41,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ce1c534e.js",
-    "static/js/2.8222f4df.chunk.js",
-    "static/css/main.5ec1c7ce.chunk.css",
-    "static/js/main.eae84402.chunk.js"
+    "static/js/2.d03cb3d6.chunk.js",
+    "static/css/main.2ced76a2.chunk.css",
+    "static/js/main.5b3a048d.chunk.js"
   ]
 }
