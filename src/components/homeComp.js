@@ -1,27 +1,52 @@
 import React from "react";
-
-import "../styles/Home.css";
+import confetti from 'canvas-confetti';
+import { Link } from "react-router-dom";
 import { GoLocation } from "react-icons/go";
 import { SiMinutemailer, SiLinkedin, SiGithub } from "react-icons/si";
 import { FaItchIo } from "react-icons/fa";
 
+import "../styles/Home.css";
+
+
+
+
+function woohoo() {
+  confetti();
+}
+
 const Home = () => (
-  <div class="Homeparent">
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=DM+Sans"
-    ></link>
-    <h1 class="homeLocation">
-      {" "}
-      <GoLocation aria-label="location icon" /> Gilbert, Arizona
-    </h1>
-    <h2 class="homeTitle">Hi.</h2>
-    <div class="homeIntro">
-      I'm Sarah Dettloff. I like to write code and build software.
+  <div class="home">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+
+    <div class="sarah_wrapper">
+      <h1 class="sarah_title">
+        <span data-text="Sarah">Sarah</span><br></br>
+        <span data-text="Dettloff">Dettloff</span>
+      </h1>
     </div>
-    <div class="homeBody">
-      Mobile applications, browser games, and small scale applications.
+
+    <h3>Proactive self-motivated remote software engineer who enjoys solving puzzels,
+      <br></br>
+      providing simple solutions to complex challenges, and
+      <br></br>a good cup of coffee.
+    </h3>
+
+    <div class="geo_location_link">
+      <a href="http://maps.google.com/maps?q=Gilbert,+AZ">
+        <h2 class="square_abstract">
+          <h1 class="homeLocation">
+            <GoLocation aria-label="location icon" />
+            Gilbert, Arizona
+          </h1>
+        </h2>
+        <em></em>
+      </a>
     </div>
+
+    <Link to="/development">
+      <h3><button class="projects_button" onClick={woohoo}>Checkout my Projects</button></h3>
+    </Link>
+
     <div class="homeContact">
       <a
         href="mailto:Sarah.Liz.Dettloff@gmail.com"

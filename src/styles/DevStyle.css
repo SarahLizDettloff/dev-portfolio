@@ -1,79 +1,295 @@
+.popup {
+  top: 0;
+}
 
-img:hover {
+.popup img {
+  top: 0;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.popup img:hover {
   opacity: 0.2;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 #0D314E;
 }
 
-.popup img{
-  max-height:100px;
-  max-width:100px;
-  height:auto;
-  width:auto;
+@font-face {
+  font-family: 'FiraSans';
+  src: local('FiraSans'),
+    url(../assets/fonts/FiraSans-Medium.ttf);
 }
+
+
+@font-face {
+  font-family: 'FiraSansBold';
+  src: local('FiraSansBold'),
+    url(../assets/fonts/FiraSans-Bold.ttf);
+}
+
+div {
+  font-family: 'FiraSansBold';
+}
+
+.overlay_caption {
+  font-family: "FiraSans";
+  background: linear-gradient(130deg, #0D314E, #D05301);
+  box-shadow: 10px 10px 5px #0D314E;
+  color: #D9E2F7;
+  min-height: 50px;
+  height: auto;
+  margin: auto;
+  width: auto;
+  padding: 10px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  text-rendering: optimizelegibility !important;
+  letter-spacing: .03em;
+  text-shadow:
+    0.05em 0 #0D314E,
+    0 0.05em #0D314E,
+    -0.05em 0 #0D314E,
+    0 -0.05em #0D314E,
+    -0.05em -0.05em #0D314E,
+    -0.05em 0.05em #0D314E,
+    0.05em -0.05em #0D314E,
+    0.05em 0.05em #0D314E;
+  background-size: 200% 200%;
+  -webkit-animation: Animation 5s ease infinite;
+  -moz-animation: Animation 5s ease infinite;
+  animation: Animation 5s ease infinite;
+}
+
+@-webkit-keyframes Animation {
+  0% {
+    background-position: 10% 0%
+  }
+
+  50% {
+    background-position: 91% 100%
+  }
+
+  100% {
+    background-position: 10% 0%
+  }
+}
+
+@-moz-keyframes Animation {
+  0% {
+    background-position: 10% 0%
+  }
+
+  50% {
+    background-position: 91% 100%
+  }
+
+  100% {
+    background-position: 10% 0%
+  }
+}
+
+@keyframes Animation {
+  0% {
+    background-position: 10% 0%
+  }
+
+  50% {
+    background-position: 91% 100%
+  }
+
+  100% {
+    background-position: 10% 0%
+  }
+}
+
+.iframe_left_column {
+  margin: 10px 5px 10px 0px;
+  padding: 2px;
+  float: left;
+}
+
+.iframe_right_column {
+  float: right;
+  margin: 10px 0px 10px 0px;
+  padding: 2px;
+  display: inline;
+  position: relative;
+}
+
+.iframe_row {
+  padding: 2px;
+  margin: 5px;
+}
+
+.iframe_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .references {
-  position: absolute;
-  top: 5%;
-  left: 16px;
-  display:block;
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  padding: 10px;
 }
+
+.references a:hover {
+  color: #D05301;
+}
+
 .title {
-  font-family: "DM Sans", sans-serif;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  font-family: 'FiraSansBold';
   letter-spacing: 2px;
   text-align: center;
-  color: white;
-  scroll-behavior: smooth;
+  color: #D9E2F7;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  font-size: 2em;
-  padding: 5px;
+  font-size: 1.2em;
   font-weight: 700;
   text-transform: capitalize;
+  font-family: "FiraSans";
+  background: linear-gradient(130deg, #0D314E, #D05301);
+  box-shadow: 10px 10px 5px #0D314E;
+  margin: auto;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  text-rendering: optimizelegibility !important;
+  letter-spacing: .03em;
+  background-size: 200% 200%;
+  -webkit-animation: Animation 5s ease infinite;
+  -moz-animation: Animation 5s ease infinite;
+  animation: Animation 5s ease infinite;
+  border-style: inset;
 }
 
-.title:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.title_underline {
+  color: #D9E2F7;
+  background-image: linear-gradient(to right,
+      #9AA3B8,
+      #D9E2F7 50%,
+      #D9E2F7 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 
-.legend:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.title_underline:before {
+  color: #D9E2F7;
+  content: '';
+  background: linear-gradient(to right,
+      #0D314E,
+      #9AA3B8 50%,
+      #9AA3B8 50%);
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.title_underline:hover {
+  background-position: 0;
+}
+
+.title_underline:hover::before {
+  width: 100%;
 }
 
 .legend {
+  top: 10%;
+  left: 0%;
+  position: relative;
+  padding: 10px;
   font-size: 1em;
-  font-family: "DM Mono", sans-serif;
+  font-family: 'FiraSans';
   letter-spacing: 2px;
   text-align: center;
-  color: white;
+  color: #D9E2F7;
   scroll-behavior: smooth;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  font-weight: bold;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  position: relative;
+  background-color: #0D314E;
+  box-shadow: 0 8px 16px 0 #0D314E;
+  text-rendering: optimizeLegibility;
 }
-.dev { 
+
+.dev {
   margin-left: 5%;
   margin-right: 5%;
-
+  font-family: 'FiraSans';
+  padding-top: 80px;
 }
 
-.App-link {
-  background-color: black;
+.dev h1 {
+  font-family: 'FiraSansBold';
+  color: #D9E2F7;
+  text-shadow: 2px 2px #0D314E;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.underline_link {
+  font-family: 'FiraSansBold';
+  color: #D9E2F7;
+  text-shadow: 2px 2px #0D314E;
+  position: static;
 }
 
+.underline_link a:link {
+  text-decoration: none;
+}
 
+.underline_link a:visited {
+  text-decoration: none;
+}
+
+.underline_link a:hover {
+  text-decoration: none;
+  color: #D05301;
+}
+
+.underline_link a:active {
+  text-decoration: none;
+}
+
+.underline_link a {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+}
+
+.underline_link a {
+  background:
+    linear-gradient(to right,
+      #D9E2F7,
+      #D9E2F7),
+    linear-gradient(to right,
+      #9AA3B8,
+      #D05301,
+      #0D314E);
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.underline_link a:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+img {
+  size: 25%;
+}
