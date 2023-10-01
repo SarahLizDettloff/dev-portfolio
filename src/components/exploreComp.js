@@ -1,28 +1,16 @@
 import React, { Component } from "react";
 import * as THREE from "three";
-
-import { FaPaintBrush, FaTshirt, FaSnowflake } from "react-icons/fa";
+import { FaPaintBrush, FaSnowflake } from "react-icons/fa";
 import {
-  GiBigWave,
-  GiSpotedFlower,
   GiTumbleweed,
-  GiDefensiveWall,
-  GiSunset,
   GiNightSleep,
   GiCastle,
 } from "react-icons/gi";
-import { RiSailboatFill } from "react-icons/ri";
 
 import "../styles/Canvas.css";
 
 import artistWorkshop from "../assets/skybox/artist_workshop_4k.png";
-import garden from "../assets/skybox/chinese_garden.png";
 import kiaraDawn from "../assets/skybox/kiaraDawn.png";
-import lakeSide from "../assets/skybox/lakeSide.png";
-import leadenhall_market from "../assets/skybox/leadenhall_market.png";
-import mutianyu from "../assets/skybox/mutianyu.png";
-import sky from "../assets/skybox/mt.png";
-import veniceSunset from "../assets/skybox/veniceSunset.png";
 import vignaioli_night from "../assets/skybox/vignaioli_night.png";
 import winterEvening from "../assets/skybox/winterEvening.png";
 import zavelstein from "../assets/skybox/zavelstein_4k.png";
@@ -58,7 +46,7 @@ class Shape extends Component {
     this.scene.add(spotLight);
 
     var dirLight = new THREE.DirectionalLight(0x55505a, 1);
-    dirLight.position.set(0, 2, 0);
+    dirLight.position.set(0, 0, 0);
     dirLight.castShadow = true;
     dirLight.shadow.camera.near = 1;
     dirLight.shadow.camera.far = 10;
@@ -69,6 +57,20 @@ class Shape extends Component {
     dirLight.shadow.mapSize.width = 1024;
     dirLight.shadow.mapSize.height = 1024;
     this.scene.add(dirLight);
+
+    this.sunLight = new THREE.DirectionalLight(0xd63710, 10);
+    this.sunLight.position.set(-300, 100, -400);
+    this.sunLight.position.multiplyScalar(5.0);
+
+    this.sunLight.castShadow = true;
+    // this.sunLight.shadowCameraVisible = true;
+
+    this.sunLight.shadowMapWidth = 512;
+    this.sunLight.shadowMapHeight = 512;
+
+    this.sunLight.lookAt(new THREE.Vector3(0, 0, 0));
+    this.scene.add(this.sunLight);
+
 
     this.renderer = new THREE.WebGLRenderer({ antialias: true });
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
@@ -140,7 +142,7 @@ class Shape extends Component {
 
   skyBox() {
     const loader = new THREE.TextureLoader();
-    const texture = loader.load(sky);
+    const texture = loader.load(winterEvening);
     texture.magFilter = THREE.LinearFilter;
     texture.minFilter = THREE.LinearFilter;
 
@@ -203,73 +205,6 @@ class Shape extends Component {
     this.scene.add(light);
   }
 
-  lakeSide() {
-    const loader = new THREE.TextureLoader();
-    const texture = loader.load(lakeSide);
-    texture.magFilter = THREE.LinearFilter;
-    texture.minFilter = THREE.LinearFilter;
-
-    const shader = THREE.ShaderLib.equirect;
-    const material = new THREE.ShaderMaterial({
-      fragmentShader: shader.fragmentShader,
-      vertexShader: shader.vertexShader,
-      uniforms: shader.uniforms,
-      depthWrite: false,
-      side: THREE.BackSide,
-    });
-    material.uniforms.tEquirect.value = texture;
-  }
-
-  capehill() {
-    const loader = new THREE.TextureLoader();
-    const texture = loader.load(sky);
-    texture.magFilter = THREE.LinearFilter;
-    texture.minFilter = THREE.LinearFilter;
-
-    const shader = THREE.ShaderLib.equirect;
-    const material = new THREE.ShaderMaterial({
-      fragmentShader: shader.fragmentShader,
-      vertexShader: shader.vertexShader,
-      uniforms: shader.uniforms,
-      depthWrite: false,
-      side: THREE.BackSide,
-    });
-    material.uniforms.tEquirect.value = texture;
-  }
-
-  chineseGarden() {
-    const loader = new THREE.TextureLoader();
-    const texture = loader.load(garden);
-    texture.magFilter = THREE.LinearFilter;
-    texture.minFilter = THREE.LinearFilter;
-
-    const shader = THREE.ShaderLib.equirect;
-    const material = new THREE.ShaderMaterial({
-      fragmentShader: shader.fragmentShader,
-      vertexShader: shader.vertexShader,
-      uniforms: shader.uniforms,
-      depthWrite: false,
-      side: THREE.BackSide,
-    });
-    material.uniforms.tEquirect.value = texture;
-  }
-
-  leadenhall_market() {
-    const loader = new THREE.TextureLoader();
-    const texture = loader.load(leadenhall_market);
-    texture.magFilter = THREE.LinearFilter;
-    texture.minFilter = THREE.LinearFilter;
-
-    const shader = THREE.ShaderLib.equirect;
-    const material = new THREE.ShaderMaterial({
-      fragmentShader: shader.fragmentShader,
-      vertexShader: shader.vertexShader,
-      uniforms: shader.uniforms,
-      depthWrite: false,
-      side: THREE.BackSide,
-    });
-    material.uniforms.tEquirect.value = texture;
-  }
 
   vignaioli_night() {
     const loader = new THREE.TextureLoader();
@@ -308,40 +243,6 @@ class Shape extends Component {
   winterEvening() {
     const loader = new THREE.TextureLoader();
     const texture = loader.load(winterEvening);
-    texture.magFilter = THREE.LinearFilter;
-    texture.minFilter = THREE.LinearFilter;
-
-    const shader = THREE.ShaderLib.equirect;
-    const material = new THREE.ShaderMaterial({
-      fragmentShader: shader.fragmentShader,
-      vertexShader: shader.vertexShader,
-      uniforms: shader.uniforms,
-      depthWrite: false,
-      side: THREE.BackSide,
-    });
-    material.uniforms.tEquirect.value = texture;
-  }
-
-  mutianyu() {
-    const loader = new THREE.TextureLoader();
-    const texture = loader.load(mutianyu);
-    texture.magFilter = THREE.LinearFilter;
-    texture.minFilter = THREE.LinearFilter;
-
-    const shader = THREE.ShaderLib.equirect;
-    const material = new THREE.ShaderMaterial({
-      fragmentShader: shader.fragmentShader,
-      vertexShader: shader.vertexShader,
-      uniforms: shader.uniforms,
-      depthWrite: false,
-      side: THREE.BackSide,
-    });
-    material.uniforms.tEquirect.value = texture;
-  }
-
-  veniceSunset() {
-    const loader = new THREE.TextureLoader();
-    const texture = loader.load(veniceSunset);
     texture.magFilter = THREE.LinearFilter;
     texture.minFilter = THREE.LinearFilter;
 
@@ -400,45 +301,26 @@ class Shape extends Component {
             this.mount = mount;
           }}
         />
-        <nav class="ExploreLeftSideNav">
+        <nav class="explore_left_side_nav">
           <p>Click, hold and pull to look around on the screen.</p>
-          <button type="button" onClick={this.artistWorkshop}>
+          <button class="button_glitch" type="button" onClick={this.artistWorkshop}>
             Artist Workshop &nbsp; &nbsp; &nbsp; <FaPaintBrush></FaPaintBrush>
           </button>
-          <button type="button" onClick={this.capehill}>
-            Cape Hill &nbsp; &nbsp; &nbsp; <GiBigWave></GiBigWave>
-          </button>
-          <button type="button" onClick={this.chineseGarden}>
-            Chinese Garden &nbsp; &nbsp; &nbsp;{" "}
-            <GiSpotedFlower></GiSpotedFlower>
-          </button>
-          <button type="button" onClick={this.lakeSide}>
-            Lake Side &nbsp; &nbsp; &nbsp; <RiSailboatFill></RiSailboatFill>
-          </button>
-          <button type="button" onClick={this.leadenhall_market}>
-            Leadenhall Market &nbsp; &nbsp; &nbsp; <FaTshirt></FaTshirt>
-          </button>
-          <button type="button" onClick={this.kiaraDawn}>
+          <button class="button_glitch" type="button" onClick={this.kiaraDawn}>
             Kiara Dawn &nbsp; &nbsp; &nbsp; <GiTumbleweed></GiTumbleweed>
           </button>
-          <button type="button" onClick={this.mutianyu}>
-            Mutianyu &nbsp; &nbsp; &nbsp; <GiDefensiveWall></GiDefensiveWall>
-          </button>
-          <button type="button" onClick={this.veniceSunset}>
-            Venice Sunset &nbsp; &nbsp; &nbsp; <GiSunset></GiSunset>
-          </button>
-          <button type="button" onClick={this.vignaioli_night}>
+          <button class="button_glitch" type="button" onClick={this.vignaioli_night}>
             Vignaioli Night &nbsp; &nbsp; &nbsp; <GiNightSleep></GiNightSleep>
           </button>
-          <button type="button" onClick={this.winterEvening}>
+          <button class="button_glitch" type="button" onClick={this.winterEvening}>
             Winter Evening &nbsp; &nbsp; &nbsp; <FaSnowflake></FaSnowflake>
           </button>
-          <button type="button" onClick={this.zavelstein}>
+          <button class="button_glitch" type="button" onClick={this.zavelstein}>
             Zavelstein &nbsp; &nbsp; &nbsp; <GiCastle></GiCastle>
           </button>
         </nav>
         <p class="kudos">
-          Skybox Assets from<a href="https://hdrihaven.com/">HDRI Haven</a>{" "}
+          Skybox Assets from<a href="https://hdrihaven.com/">HDRI Haven</a>
         </p>
       </div>
     );

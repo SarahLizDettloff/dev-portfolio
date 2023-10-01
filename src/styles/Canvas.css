@@ -1,22 +1,37 @@
 .Shape {
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute; 
-    left: 0;
-    width: 100%; height: 100%;
-}
-
-/* The side navigation menu */
-.ExploreLeftSideNav {
+  top: 0;
+  height: 100%;
+  width: 100%;
   position: absolute;
-  top:0;
+  left: 0;
+  width: 100%;
   height: 100%;
 }
 
-/* The navigation menu links */
-.ExploreLeftSideNav button {
+@font-face {
+  font-family: 'FiraSans';
+  src: local('FiraSans'),
+    url(../assets/fonts/FiraSans-Medium.ttf);
+}
+
+.explore_left_side_nav {
+  position: absolute;
+  top: 10%;
+  height: 20%;
+  font-family: 'FiraSans';
+  text-shadow: #D05301 1px 0 10px;
+  width: 75%;
+  padding: 25px;
+  table-layout: fixed;
+  color: #D9E2f7;
+  border-collapse: collapse;
+}
+
+.explore_left_side_nav button {
+  width: 20%;
   display: inline-block;
+  font-family: 'FiraSans';
+  text-shadow: #D05301 1px 0 10px;
   padding: 1px 8px;
   display: flex;
   align-items: center;
@@ -25,31 +40,91 @@
   text-align: center;
   font-size: 1em;
   margin: 4px 2px;
-  opacity: 0.6;
   transition: 0.3s;
-  font-family: "DM Mono", sans-serif;
+  color: #D9E2f7;
 }
 
-/* When you mouse over the navigation links, change their color */
-.ExploreLeftSideNav button:hover {
-  color: #2f7ac0;
+.explore_left_side_nav button:hover {
+  color: #0D314E;
+  text-shadow: #D9E2f7 1px 0 10px;
 }
-.ExploreLeftSideNav button:checked {
-  background:red;
-}
+
 kudos.legibility {
   text-rendering: optimizeLegibility;
 }
+
 kudos.speed {
   text-rendering: optimizeSpeed;
 }
+
 .kudos {
-    z-index: 99;
-    right: 0%;
-    bottom: 0%;
-        position: absolute;
-    display: block;
-      text-align: right;
+  z-index: 99;
+  right: 0%;
+  bottom: 0%;
+  position: absolute;
+  display: block;
+  text-align: right;
   font-size: 16px;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'FiraSans';
+  color: #0D314E;
+  text-shadow: #D05301 1px 0 10px;
+}
+
+.kudos a:hover {
+  color: #0D314E;
+  text-shadow: #D9E2f7 1px 0 10px;
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  src: local('FiraSans'),
+    url(../assets/fonts/FiraSans-Medium.ttf);
+}
+
+.button_glitch {
+  --c: #D9E2f7;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i, -1)));
+  text-shadow: calc(var(--_i, -1)* 0.08em) -.01em 0 var(--c),
+    calc(var(--_i, -1)*-0.08em) .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+  color: #D9E2f7;
+  box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
+  font-size: 100%;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  outline: 2px solid transparent;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-transform: none;
+  font-family: "FiraSans";
+  appearance: button;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, #97b7d1, #0D314E);
+  border: 0 solid #97b7d1;
+  border-radius: .5rem;
+  box-sizing: border-box;
+}
+
+.button_glitch:hover,
+.button_glitch:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.button_glitch:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+
+.button_glitch {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  padding: .1em .3em;
 }
